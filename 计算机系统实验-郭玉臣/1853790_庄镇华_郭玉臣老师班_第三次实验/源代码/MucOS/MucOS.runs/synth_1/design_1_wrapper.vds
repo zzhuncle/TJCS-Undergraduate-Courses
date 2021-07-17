@@ -1,0 +1,512 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun 26 23:08:55 2021
+# Process ID: 16928
+# Current directory: E:/MucOS/MucOS.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: E:/MucOS/MucOS.runs/synth_1/design_1_wrapper.vds
+# Journal file: E:/MucOS/MucOS.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 392.746 ; gain = 83.570
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 429.617 ; gain = 36.871
+Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10484 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 878.984 ; gain = 179.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_intc_0_2' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_axi_intc_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_intc_0_2' (1#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_axi_intc_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_timer_0_2' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_axi_timer_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_timer_0_2' (2#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_axi_timer_0_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'design_1_axi_timer_0_2' has 26 connections declared, but only 23 given [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:180]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_timer_1_2' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_axi_timer_1_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_timer_1_2' (3#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_axi_timer_1_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_timer_1' of module 'design_1_axi_timer_1_2' has 26 connections declared, but only 23 given [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:204]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_3' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_axi_uartlite_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_3' (4#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_axi_uartlite_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_3' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_clk_wiz_1_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_3' (5#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_clk_wiz_1_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_3' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_mdm_1_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_3' (6#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_mdm_1_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_3' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_microblaze_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_3' (7#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_microblaze_0_3_stub.v:6]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_3' has 52 connections declared, but only 51 given [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:269]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_3' [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:459]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1165]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (8#1) [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1165]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1297]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (9#1) [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1297]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1429]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (10#1) [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1429]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1561]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (11#1) [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1561]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1927]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (12#1) [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1927]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_2' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_2' (13#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_xbar_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_2' has 40 connections declared, but only 38 given [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1124]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_3' (14#1) [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:459]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1693]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_3' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_dlmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_3' (15#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_dlmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_3' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_dlmb_v10_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_3' (16#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_dlmb_v10_3_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_3' has 25 connections declared, but only 24 given [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1839]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_3' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_ilmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_3' (17#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_ilmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_3' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_ilmb_v10_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_3' (18#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_ilmb_v10_3_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_3' has 25 connections declared, but only 24 given [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1885]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_3' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_lmb_bram_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_3' (19#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_lmb_bram_3_stub.v:6]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_3' has 16 connections declared, but only 14 given [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1910]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (20#1) [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:1693]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_3' [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_rst_clk_wiz_1_100M_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_3' (21#1) [E:/MucOS/MucOS.runs/synth_1/.Xil/Vivado-16928-DESKTOP-2S5VSP1/realtime/design_1_rst_clk_wiz_1_100M_3_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_3' has 10 connections declared, but only 8 given [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:443]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_2' [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_2/synth/design_1_xlconcat_0_2.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 3 - type: integer 
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (22#1) [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_2' (23#1) [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_2/synth/design_1_xlconcat_0_2.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (24#1) [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (25#1) [E:/MucOS/MucOS.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 947.023 ; gain = 247.762
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 947.023 ; gain = 247.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 947.023 ; gain = 247.762
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_3/design_1_microblaze_0_3/design_1_microblaze_0_2_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_3/design_1_microblaze_0_3/design_1_microblaze_0_2_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_3/design_1_dlmb_v10_3/design_1_dlmb_v10_2_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_3/design_1_dlmb_v10_3/design_1_dlmb_v10_2_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_3/design_1_ilmb_v10_3/design_1_dlmb_v10_2_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_3/design_1_ilmb_v10_3/design_1_dlmb_v10_2_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_3/design_1_dlmb_bram_if_cntlr_3/design_1_dlmb_bram_if_cntlr_3_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_3/design_1_dlmb_bram_if_cntlr_3/design_1_dlmb_bram_if_cntlr_3_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_3_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_3_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_3/design_1_lmb_bram_3/design_1_lmb_bram_3_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_3/design_1_lmb_bram_3/design_1_lmb_bram_3_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_3/design_1_mdm_1_3/design_1_mdm_1_2_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_3/design_1_mdm_1_3/design_1_mdm_1_2_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_3/design_1_rst_clk_wiz_1_100M_3/design_1_rst_clk_wiz_1_100M_2_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_3/design_1_rst_clk_wiz_1_100M_3/design_1_rst_clk_wiz_1_100M_2_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_3/design_1_axi_uartlite_0_3/design_1_axi_uartlite_0_2_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_3/design_1_axi_uartlite_0_3/design_1_axi_uartlite_0_2_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_2/design_1_axi_timer_0_2/design_1_axi_timer_0_1_in_context.xdc] for cell 'design_1_i/axi_timer_0'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_2/design_1_axi_timer_0_2/design_1_axi_timer_0_1_in_context.xdc] for cell 'design_1_i/axi_timer_0'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_1_2/design_1_axi_timer_1_2/design_1_axi_timer_0_1_in_context.xdc] for cell 'design_1_i/axi_timer_1'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_1_2/design_1_axi_timer_1_2/design_1_axi_timer_0_1_in_context.xdc] for cell 'design_1_i/axi_timer_1'
+Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_2/design_1_axi_intc_0_2/design_1_axi_intc_0_1_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Finished Parsing XDC File [e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_2/design_1_axi_intc_0_2/design_1_axi_intc_0_1_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Parsing XDC File [E:/MucOS/MucOS.srcs/constrs_1/new/cons.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_block'. [E:/MucOS/MucOS.srcs/constrs_1/new/cons.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'sys_block'. [E:/MucOS/MucOS.srcs/constrs_1/new/cons.xdc:7]
+Finished Parsing XDC File [E:/MucOS/MucOS.srcs/constrs_1/new/cons.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/MucOS/MucOS.srcs/constrs_1/new/cons.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/MucOS/MucOS.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/MucOS/MucOS.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/MucOS/MucOS.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1050.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1050.730 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.762 ; gain = 354.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.762 ; gain = 354.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  e:/MucOS/MucOS.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_timer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_timer_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_intc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.762 ; gain = 354.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.762 ; gain = 354.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_3 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1053.762 ; gain = 354.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Clk_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Update_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk_out1' to pin 'design_1_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.762 ; gain = 354.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.762 ; gain = 354.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1053.762 ; gain = 354.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1058.500 ; gain = 359.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1058.500 ; gain = 359.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1058.500 ; gain = 359.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1058.500 ; gain = 359.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1058.500 ; gain = 359.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1058.500 ; gain = 359.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |design_1_xbar_2               |         1|
+|2     |design_1_axi_intc_0_2         |         1|
+|3     |design_1_axi_timer_0_2        |         1|
+|4     |design_1_axi_timer_1_2        |         1|
+|5     |design_1_axi_uartlite_0_3     |         1|
+|6     |design_1_clk_wiz_1_3          |         1|
+|7     |design_1_mdm_1_3              |         1|
+|8     |design_1_microblaze_0_3       |         1|
+|9     |design_1_rst_clk_wiz_1_100M_3 |         1|
+|10    |design_1_dlmb_bram_if_cntlr_3 |         1|
+|11    |design_1_dlmb_v10_3           |         1|
+|12    |design_1_ilmb_bram_if_cntlr_3 |         1|
+|13    |design_1_ilmb_v10_3           |         1|
+|14    |design_1_lmb_bram_3           |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |design_1_axi_intc_0_2         |     1|
+|2     |design_1_axi_timer_0_2        |     1|
+|3     |design_1_axi_timer_1_2        |     1|
+|4     |design_1_axi_uartlite_0_3     |     1|
+|5     |design_1_clk_wiz_1_3          |     1|
+|6     |design_1_dlmb_bram_if_cntlr_3 |     1|
+|7     |design_1_dlmb_v10_3           |     1|
+|8     |design_1_ilmb_bram_if_cntlr_3 |     1|
+|9     |design_1_ilmb_v10_3           |     1|
+|10    |design_1_lmb_bram_3           |     1|
+|11    |design_1_mdm_1_3              |     1|
+|12    |design_1_microblaze_0_3       |     1|
+|13    |design_1_rst_clk_wiz_1_100M_3 |     1|
+|14    |design_1_xbar_2               |     1|
+|15    |IBUF                          |     2|
+|16    |OBUF                          |     1|
++------+------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  1401|
+|2     |  design_1_i                  |design_1                              |  1398|
+|3     |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_3    |   485|
+|4     |    xlconcat_0                |design_1_xlconcat_0_2                 |     0|
+|5     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1058.500 ; gain = 359.238
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1058.500 ; gain = 252.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1058.500 ; gain = 359.238
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1081.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1081.125 ; gain = 651.508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1081.125 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/MucOS/MucOS.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 26 23:09:54 2021...

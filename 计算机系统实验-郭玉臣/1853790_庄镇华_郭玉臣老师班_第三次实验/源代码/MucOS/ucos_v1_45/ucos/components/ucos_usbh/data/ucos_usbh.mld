@@ -1,0 +1,100 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_usbh
+  OPTION drc = ucos_usbh_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/USB-Host Embedded USB Host stack";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_usbh;
+
+BEGIN CATEGORY 01. CORE
+    PARAM name = 01. CORE;
+    PARAM name = USBH_CFG_MAX_NBR_HC, desc = "Maximum number of host controllers", type = int, default = 1;
+    PARAM name = USBH_CFG_MAX_NBR_CLASS_DRVS, desc = "Maximum number of class drivers. The hub class is mandatory and must be accounted in the total number", type = int, default = 4;
+    PARAM name = USBH_CFG_MAX_NBR_DEVS, desc = "Maximum number of devices", type = int, default = 10;
+    PARAM name = USBH_CFG_MAX_NBR_CFGS, desc = "Maximum number of configurations per devices", type = int, default = 1;
+    PARAM name = USBH_CFG_MAX_NBR_IFS, desc = "Maximum number of interfaces per USB configuration", type = int, default = 1;
+    PARAM name = USBH_CFG_MAX_NBR_EPS, desc = "Maximum number of endpoints per interface", type = int, default = 3;
+    PARAM name = USBH_CFG_MAX_CFG_DATA_LEN, desc = "Maximum configuration descriptors length", type = int, default = 256;
+    PARAM name = USBH_CFG_MAX_STR_LEN, desc = "Maximum descriptors string length", type = int, default = 256;
+    PARAM name = USBH_CFG_STD_REQ_TIMEOUT, desc = "Timeout for standard requests in ms", type = int, default = 5000;
+    PARAM name = USBH_CFG_STD_REQ_RETRY, desc = "Number of retries on standard request failure", type = int, default = 3;
+    PARAM name = USBH_CFG_MAX_ISOC_DESC, desc = "Maximum number of isochronous descriptors", type = int, default = 1;
+    PARAM name = USBH_CFG_MAX_EXTRA_URB_PER_DEV, desc = "Maximum number of extra URB", type = int, default = 1;
+    PARAM name = USBH_CFG_MAX_HUBS, desc = "Maximum number of USB hub that can be connected", type = int, default = 2;
+    PARAM name = USBH_CFG_MAX_HUB_PORTS, desc = "Maximum number of port per USB hub", type = int, default = 7;
+END CATEGORY
+
+BEGIN CATEGORY 02. CDC
+    PARAM name = 02. CDC;
+    PARAM name = USBH_CDC_CFG_MAX_DEV, desc = "Maximum number of CDC device", type = int, default = 2;
+    PARAM name = USBH_CDC_ACM_CFG_MAX_DEV, desc = "Maximum number of CDC ACM device", type = int, default = 1;
+END CATEGORY
+
+BEGIN CATEGORY 03. HID
+    PARAM name = 03. HID;
+    PARAM name = USBH_HID_CFG_MAX_DEV, desc = "Maximum number of HID devices", type = int, default = 5;
+    PARAM name = USBH_HID_CFG_MAX_NBR_APP_COLL, desc = "Maximum number of application collections", type = int, default = 10;
+    PARAM name = USBH_HID_CFG_MAX_NBR_REPORT_ID, desc = "Maximum number of report IDs", type = int, default = 15;
+    PARAM name = USBH_HID_CFG_MAX_NBR_REPORT_FMT, desc = "Maximum number of report formats", type = int, default = 15;
+    PARAM name = USBH_HID_CFG_MAX_NBR_USAGE, desc = "Maximum number of usage in local", type = int, default = 15;
+    PARAM name = USBH_HID_CFG_MAX_TX_BUF_SIZE, desc = "Maximum length of transmission buffers", type = int, default = 64;
+    PARAM name = USBH_HID_CFG_MAX_RX_BUF_SIZE, desc = "Maximum length of reception buffers", type = int, default = 128;
+    PARAM name = USBH_HID_CFG_MAX_NBR_RXCB, desc = "Maximum number of callbacks for device", type = int, default = 2;
+    PARAM name = USBH_HID_CFG_MAX_REPORT_DESC_LEN, desc = "Maximum length of report descriptors", type = int, default = 400;
+    PARAM name = USBH_HID_CFG_MAX_ERR_CNT, desc = "Maximum error count", type = int, default = 5;
+    PARAM name = USBH_HID_CFG_MAX_GLOBAL, desc = "Maximum number of global collection for push/pop items", type = int, default = 2;
+    PARAM name = USBH_HID_CFG_MAX_COLL, desc = "Maximum collections for open/close collection", type = int, default = 10;
+END CATEGORY
+
+BEGIN CATEGORY 04. MSC
+    PARAM name = 04. MSC;
+    PARAM name = USBH_MSC_CFG_MAX_DEV, desc = "Maximum number of MSC devices", type = int, default = 1;
+END CATEGORY
+
+BEGIN CATEGORY 05. FTDI
+    PARAM name = 05. FTDI;
+    PARAM name = USBH_FTDI_CFG_MAX_DEV, desc = "Maximum number of FTDI devices", type = int, default = 3;
+    PARAM name = USBH_FTDI_CFG_ID_VENDOR_CUSTOM, desc = "Custom vendor ID for FTDI devices", type = int, default = 0x0000;
+    PARAM name = USBH_FTDI_CFG_ID_PRODUCT_CUSTOM, desc = "Custom product ID for FTDI devices", type = int, default = 0x0000;
+END CATEGORY
+
+BEGIN CATEGORY 06. TRACE/DEBUG
+    PARAM name = 06. TRACE/DEBUG;
+    PARAM name = USBH_CFG_PRINT_LOG, desc = "Enable trace log printing", type = bool, default = false;
+    PARAM name = USBH_CFG_PRINT_ERR, desc = "Enable trace error printing", type = bool, default = false;
+    PARAM name = USBH_CFG_PRINT_FNAME, desc = "Enable trace function names printing", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 07. TASKS
+    PARAM name = 07. TASKS;
+    PARAM name = USBH_TASK_CFG_ASYNC_PRIO, desc = "Priority of the Asynchonous task", type = int, default = 18;
+    PARAM name = USBH_TASK_CFG_ASYNC_STACK_SIZE, desc = "Stack size of the Asynchonous task", type = int, default = 1024;
+    PARAM name = USBH_TASK_CFG_HUB_PRIO, desc = "Priority of the Hub task", type = int, default = 19;
+    PARAM name = USBH_TASK_CFG_HUB_STACK_SIZE, desc = "Stack size of the Hub task", type = int, default = 1024;
+END CATEGORY
+
+END LIBRARY

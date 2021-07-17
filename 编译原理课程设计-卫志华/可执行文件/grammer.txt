@@ -1,0 +1,96 @@
+program
+	declarationChain
+	#
+declarationChain
+	$
+	declaration declarationChain
+	#
+typeSpecifier
+	int
+	void
+	#
+declaration
+	typeSpecifier id ;
+	completeFunction
+	typeSpecifier id arrayDeclaration ;
+	#
+arrayDeclaration
+	[ num ]
+	[ num ] arrayDeclaration
+	#
+completeFunction
+	declareFunction block
+	#
+declareFunction
+	typeSpecifier id ( formalParaList )
+	#
+formalParaList
+	$
+	para
+	para , formalParaList
+	void
+	#
+para
+	typeSpecifier id
+	#
+block
+	{ statementChain }
+	#
+statementChain
+	$
+	statement statementChain
+	#
+statement
+	declaration
+	ifStatement
+	iterStatement
+	returnStatement
+	assignStatement
+	#
+array
+	id [ expression ]
+	array [ expression ]
+	#
+assignStatement
+	id = expression ;
+	array = expression ;
+	#
+returnStatement
+	return expression ;
+	return ;
+	#
+iterStatement
+	while ( expression ) block
+	#
+ifStatement
+	if ( expression ) block
+	if ( expression ) block else block
+	#
+expression
+	primaryExpression
+	primaryExpression operator expression
+	#
+primaryExpression
+	num
+	( expression )
+	id ( actualParaList )
+	id
+	array
+	#
+operator
+	+
+	-
+	*
+	/
+	<
+	<=
+	>=
+	>
+	==
+	!=
+	#
+actualParaList
+	$
+	expression
+	expression , actualParaList
+	#

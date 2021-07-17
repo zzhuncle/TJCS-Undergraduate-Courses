@@ -1,0 +1,58 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_http-c
+  OPTION drc = ucos_http-c_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/HTTPc HTTP Client";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_http-c;
+
+BEGIN CATEGORY 01. CLIENT CONFIGURATION
+  PARAM name = 01. CLIENT CONFIGURATION;
+  PARAM name = HTTPc_CFG_ARG_CHK_EXT_EN, desc = "Enable external argument checking", type = bool, default = true;
+  PARAM name = HTTPc_CFG_MODE_ASYNC_TASK_EN, desc = "Enable non-blocking async requests", type = bool, default = false;
+  PARAM name = HTTPc_CFG_MODE_BLOCK_EN, desc = "Enable blocking option", type = bool, default = true;
+  PARAM name = HTTPc_CFG_PERSISTENT_EN, desc = "Enable persistent connections", type = bool, default = true;
+  PARAM name = HTTPc_CFG_CHUNK_TX_EN, desc = "Enable chunked transfer in transmission", type = bool, default = true;
+  PARAM name = HTTPc_CFG_QUERY_STR_EN, desc = "Enable query strings", type = bool, default = true;
+  PARAM name = HTTPc_CFG_HDR_RX_EN, desc = "Enable header fields processing in reception", type = bool, default = true;
+  PARAM name = HTTPc_CFG_HDR_TX_EN, desc = "Enable header fields processing in transmission", type = bool, default = true;
+  PARAM name = HTTPc_CFG_FORM_EN, desc = "Enable form creation", type = bool, default = true;
+  PARAM name = HTTPc_CFG_USER_DATA_EN, desc = "Enable user data pointer", type = bool, default = true;
+  PARAM name = HTTPc_CFG_WEBSOCKET_EN, desc = "Enable websockets", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 02. RUNTIME CONFIGURATION
+  PARAM name = 02. RUNTIME CONFIGURATION;
+  PARAM name = HTTPc_OS_CFG_TASK_PRIO, desc = "HTTPc task priority", type = int, default = 20;
+  PARAM name = HTTPc_OS_CFG_TASK_STK_SIZE, desc = "HTTPc task stack size in bytes", type = int, default = 2048;
+  PARAM name = UCOS_HTTPc_OS_CFG_TASK_DELAY, desc = "HTTPc task delay in milliseconds", type = int, default = 1;
+  PARAM name = UCOS_HTTPc_OS_CFG_MSG_Q_SIZE, desc = "HTTPc message queue size", type = int, default = 5;
+  PARAM name = UCOS_HTTPc_OS_CFG_TIMEOUT, desc = "HTTPc connect timeout in milliseconds", type = int, default = 2000;
+  PARAM name = UCOS_HTTPc_OS_CFG_INACTIVITY_TIMEOUT, desc = "HTTPc inactivity timeout in seconds", type = int, default = 30;
+END CATEGORY
+
+END LIBRARY

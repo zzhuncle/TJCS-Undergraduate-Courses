@@ -1,0 +1,1194 @@
+!SESSION 2021-06-29 19:58:19.877 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:/MucOS/MucOS.sdk
+
+This is a continuation of log file E:\MucOS\MucOS.sdk\.metadata\.bak_0.log
+Created Time: 2021-06-29 20:02:44.923
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:02:44.923
+!MESSAGE XSCT Command: [hsi::utils::get_all_libs -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:02:44.937
+!MESSAGE XSCT command with result: [hsi::utils::get_all_libs -json], Result: [null, {"libmetal_v2_0": {"name": "libmetal",
+"version": "2.0",
+"desc": "Libmetal Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/ThirdParty/sw_services/libmetal_v2_0",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"lwip211_v1_0": {"name": "lwip211",
+"version": "1.0",
+"desc": "lwip211 library: lwIP (light weight IP) is an open source TCP/IP stack configured for Xilinx hard and soft Ethernet MACs",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/ThirdParty/sw_services/lwip211_v1_0",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"openamp_v1_5": {"name": "openamp",
+"version": "1.5",
+"desc": "OpenAmp Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/ThirdParty/sw_services/openamp_v1_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexr5",
+},
+"ucos_can": {"name": "ucos_can",
+"version": "1.45",
+"desc": "uC/CAN",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_can",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_common": {"name": "ucos_common",
+"version": "1.45",
+"desc": "uC/OS Common Components",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_common",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_dhcp-c": {"name": "ucos_dhcp-c",
+"version": "1.45",
+"desc": "uC/DHCPc DHCP Client",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_dhcp-c",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_dns-c": {"name": "ucos_dns-c",
+"version": "1.45",
+"desc": "uC/DNSc DNS Client",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_dns-c",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_fs": {"name": "ucos_fs",
+"version": "1.45",
+"desc": "uC/FS File System",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_fs",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_http-c": {"name": "ucos_http-c",
+"version": "1.45",
+"desc": "uC/HTTPc HTTP Client",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_http-c",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_http-s": {"name": "ucos_http-s",
+"version": "1.45",
+"desc": "uC/HTTPs HTTP Server",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_http-s",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_libmetal": {"name": "ucos_libmetal",
+"version": "1.45",
+"desc": "Libmetal Library for uC/OS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lucos,-lxil,-lmetal,-lgcc,-lc,--end-group",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_libmetal",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_mqtt-c": {"name": "ucos_mqtt-c",
+"version": "1.45",
+"desc": "uC/MQTT Client",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_mqtt-c",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_openamp": {"name": "ucos_openamp",
+"version": "1.45",
+"desc": "OpenAMP Library for uC/OS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lucos,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_openamp",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexr5",
+},
+"ucos_osii": {"name": "ucos_osii",
+"version": "1.45",
+"desc": "uC/OS-II Real Time Kernel",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_osii",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_osiii": {"name": "ucos_osiii",
+"version": "1.45",
+"desc": "uC/OS-III Real Time Kernel",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_osiii",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_standalone": {"name": "ucos_standalone",
+"version": "1.45",
+"desc": "Compatibility layer for Xilinx drivers. This is a duplicate of standalone, with minor modifications. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lucos,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_standalone",
+"os": "ucos freertos10_xilinx standalone",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_tcpip": {"name": "ucos_tcpip",
+"version": "1.45",
+"desc": "uC/TCP-IP Network Protocol Stack",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_tcpip",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_telnet-s": {"name": "ucos_telnet-s",
+"version": "1.45",
+"desc": "uC/TELNETs Telnet Server",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_telnet-s",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_usbd": {"name": "ucos_usbd",
+"version": "1.45",
+"desc": "uC/USB-Device Embedded USB Device stack",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_usbd",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"ucos_usbh": {"name": "ucos_usbh",
+"version": "1.45",
+"desc": "uC/USB-Host Embedded USB Host stack",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "E:/MucOS/ucos_v1_45/ucos/components/ucos_usbh",
+"os": "ucos",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilffs_v4_1": {"name": "xilffs",
+"version": "4.1",
+"desc": "Generic Fat File System Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilffs_v4_1",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilflash_v4_6": {"name": "xilflash",
+"version": "4.6",
+"desc": "Xilinx Flash library for Intel/AMD CFI compliant parallel flash",
+"compilerflags": "",
+"linkerflags": "-lxilflash",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilflash_v4_6",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilfpga_v5_0": {"name": "xilfpga",
+"version": "5.0",
+"desc": "XilFPGA library provides an interface to the Linux or bare-metal users for configuring the PL over PCAP from PS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilfpga,-lxil,-lxilsecure,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilfpga_v5_0",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa53 psu_cortexr5 psu_pmu",
+},
+"xilisf_v5_13": {"name": "xilisf",
+"version": "5.13",
+"desc": "Xilinx In-system and Serial Flash Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilisf,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilisf_v5_13",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xillibpm_v1_0": {"name": "xillibpm",
+"version": "1.0",
+"desc": "Xilinx Versal Platform Management Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxillibpm,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xillibpm_v1_0",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa72 psu_cortexr5",
+},
+"xilloader_v1_0": {"name": "xilloader",
+"version": "1.0",
+"desc": "Xilinx Versal Platform Loader Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilloader,-lxillibpm,-lxilplmi,-lxilffs,-lxilpdi,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilloader_v1_0",
+"os": "standalone",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilmailbox_v1_0": {"name": "xilmailbox",
+"version": "1.0",
+"desc": "Xilinx IPI Mailbox Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilmailbox,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilmailbox_v1_0",
+"os": "standalone",
+"proc": "psu_cortexa72 psu_cortexa53 psu_cortexr5 psu_pmu",
+},
+"xilpdi_v1_0": {"name": "xilpdi",
+"version": "1.0",
+"desc": "Xilinx Programable Device Image (PDI) Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpdi,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilpdi_v1_0",
+"os": "standalone",
+"proc": "psu_cortexa72 psu_cortexr5",
+},
+"xilplmi_v1_0": {"name": "xilplmi",
+"version": "1.0",
+"desc": "Xilinx versal Platform Loader and Manager Interface Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilplmi,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilplmi_v1_0",
+"os": "standalone",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilpm_v2_5": {"name": "xilpm",
+"version": "2.5",
+"desc": "Power Management API Library for ZynqMP",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilpm_v2_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilrsa_v1_5": {"name": "xilrsa",
+"version": "1.5",
+"desc": "Xilinx RSA Library to access RSA and SHA software algorithms on Zynq",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilrsa_v1_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9",
+},
+"xilsecure_v4_0": {"name": "xilsecure",
+"version": "4.0",
+"desc": "Xilinx Secure Library provides interface to AES, RSA and SHA hardware engines on ZynqMP Soc and Versal",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilsecure_v4_0",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa53 psu_cortexr5 psu_pmu psu_cortexa72 psv_cortexa72",
+},
+"xilskey_v6_7": {"name": "xilskey",
+"version": "6.7",
+"desc": "Xilinx Secure Key Library supports programming efuse and bbram",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilskey,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilskey_v6_7",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:02:44.940
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:02:44.942
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Result: [null, ucos_osiii ucos_common ucos_standalone]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:02:44.943
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:02:44.945
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Result: [null, {"ucos_osiii": "1.45",
+"ucos_common": "1.45",
+"ucos_standalone": "1.45",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:02:45.830
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:02:45.834
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Result: [null, {"axi_intc_0": {"name": "intc",
+"ver": "3.9",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.5",
+},
+"axi_timer_1": {"name": "tmrctr",
+"ver": "4.5",
+},
+"axi_uartlite_0": {"name": "ucos_axiuartlite",
+"ver": "1.45",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.9",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:03:41.481
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:03:41.482
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Result: [null, ]. Thread: main
+!SESSION 2021-06-29 20:53:58.768 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:/MucOS/MucOS.sdk
+
+!ENTRY org.eclipse.ui 2 0 2021-06-29 20:54:00.615
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-06-29 20:54:00.615
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2021-06-29 20:54:01.364
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-06-29 20:54:01.364
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:16.391
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:16.391
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:16.541
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:16.542
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:16.543
+!MESSAGE XSCT Command: [setws E:/MucOS/MucOS.sdk], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:16.544
+!MESSAGE XSCT command with result: [setws E:/MucOS/MucOS.sdk], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:16.565
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "E:/MucOS/ucos_v1_45/ucos"], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:16.692
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "E:/MucOS/ucos_v1_45/ucos"], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:16.707
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:20.941
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:26.955
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:26.957
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"microblaze_0": "design_1_i/microblaze_0:design_1_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:26.959
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:26.965
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_intc_0": {"hier_name": "axi_intc_0",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_1": {"hier_name": "axi_timer_1",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:27.300
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:27.319
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Sat Jun 26 23:04:25 2021",
+"vivado_version": "2019.1",
+"part": "xc7a100tcsg324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:30.097
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:30.103
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:30.119
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:30.120
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:49.105
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:53.083
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:53.086
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:56.035
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B356A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:56.055
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:56.061
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B356A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:56.062
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:56.081
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:56.082
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:56.814
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:56.815
+!MESSAGE XSCT Command: [fpga -file E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:54:59.733
+!MESSAGE XSCT command with result: [fpga -file E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:55:00.541
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 20:55:00.600
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:35.331
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:35.441
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.287
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.288
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.289
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.295
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B356A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.295
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.301
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B356A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.301
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.323
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.323
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.351
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:53.352
+!MESSAGE XSCT Command: [fpga -file E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:55.545
+!MESSAGE XSCT command with result: [fpga -file E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:56.351
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:54:56.353
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:43.284
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:43.286
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.500
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.527
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.528
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.535
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B356A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.535
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.541
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B356A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.541
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.559
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.560
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.580
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:57.581
+!MESSAGE XSCT Command: [fpga -file E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:57:59.781
+!MESSAGE XSCT command with result: [fpga -file E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:58:00.591
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-29 22:58:00.594
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+!SESSION 2021-06-30 12:20:55.306 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:/MucOS/MucOS.sdk
+
+!ENTRY org.eclipse.ui 2 0 2021-06-30 12:20:57.334
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-06-30 12:20:57.334
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2021-06-30 12:20:57.956
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-06-30 12:20:57.956
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:19.179
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:19.179
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:19.179
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:19.327
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:19.350
+!MESSAGE XSCT Command: [setws E:/MucOS/MucOS.sdk], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:19.799
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:19.814
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "E:/MucOS/ucos_v1_45/ucos"], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:26.169
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:26.169
+!MESSAGE XSCT command with result: [setws E:/MucOS/MucOS.sdk], Result: [null, ]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.341
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "E:/MucOS/ucos_v1_45/ucos"], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.346
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.503
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.504
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.508
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "ucos",
+"osver": "1.45",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.517
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.557
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"microblaze_0": {"bsp": {"name": "ucos",
+"version": "1.45",
+"desc": "uC/OS is the collection of Micrium RTOS components including the uC/OS-II and uC/OS-III real time kernels.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lucos,-lgcc,-lc,--end-group",
+"repo": "E:/MucOS/ucos_v1_45/ucos/bsp",
+},
+"freertos10_xilinx_v1_3": {"name": "freertos10_xilinx",
+"version": "1.3",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.1.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_3",
+},
+"standalone_v7_0": {"name": "standalone",
+"version": "7.0",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/lib/bsp/standalone_v7_0",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.559
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.562
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Result: [null, ucos_osiii ucos_common ucos_standalone]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.562
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.565
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Result: [null, {"ucos_osiii": "1.45",
+"ucos_common": "1.45",
+"ucos_standalone": "1.45",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.565
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "ucos_osiii" && VERSION == "1.45"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.577
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "ucos_osiii" && VERSION == "1.45"  && TYPE == "LIBRARY"}]], Result: [null, E:/MucOS/ucos_v1_45/ucos\components\ucos_osiii]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.577
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "ucos_common" && VERSION == "1.45"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.581
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "ucos_common" && VERSION == "1.45"  && TYPE == "LIBRARY"}]], Result: [null, E:/MucOS/ucos_v1_45/ucos\components\ucos_common]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.581
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "ucos_standalone" && VERSION == "1.45"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.584
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "ucos_standalone" && VERSION == "1.45"  && TYPE == "LIBRARY"}]], Result: [null, E:/MucOS/ucos_v1_45/ucos\components\ucos_standalone]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.585
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.590
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, axi_intc_0 axi_timer_0 axi_timer_1 axi_uartlite_0 microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.608
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.612
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Result: [null, {"axi_intc_0": {"name": "intc",
+"ver": "3.9",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.5",
+},
+"axi_timer_1": {"name": "tmrctr",
+"ver": "4.5",
+},
+"axi_uartlite_0": {"name": "ucos_axiuartlite",
+"ver": "1.45",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.9",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.613
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.649
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_intc_0": {"version": "4.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"intc_v3_9": {"name": "intc",
+"version": "3.9",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/intc_v3_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_timer_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"tmrctr_v4_5": {"name": "tmrctr",
+"version": "4.5",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/tmrctr_v4_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_timer_1": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"tmrctr_v4_5": {"name": "tmrctr",
+"version": "4.5",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/tmrctr_v4_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_2": {"name": "uartlite",
+"version": "3.2",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+"ucos_axiuartlite": {"name": "ucos_axiuartlite",
+"version": "1.45",
+"repo": "E:/MucOS/ucos_v1_45/ucos/drivers/ucos_axiuartlite",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"clk_wiz_1": {"version": "6.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"clk_wiz_v1_2": {"name": "clk_wiz",
+"version": "1.2",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"mdm_1": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_2": {"name": "uartlite",
+"version": "3.2",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+"ucos_axiuartlite": {"name": "ucos_axiuartlite",
+"version": "1.45",
+"repo": "E:/MucOS/ucos_v1_45/ucos/drivers/ucos_axiuartlite",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0": {"version": "11.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_v2_9": {"name": "cpu",
+"version": "2.9",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_3": {"name": "bram",
+"version": "4.3",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_3": {"name": "bram",
+"version": "4.3",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_lmb_bram": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"rst_clk_wiz_1_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconcat_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.878
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:21:27.880
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/MucOS/MucOS.sdk/MucOS_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:22:16.557
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:22:16.559
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"microblaze_0": "design_1_i/microblaze_0:design_1_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:22:16.560
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:22:16.568
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_intc_0": {"hier_name": "axi_intc_0",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_1": {"hier_name": "axi_timer_1",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:22:16.981
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:22:16.983
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Sat Jun 26 23:04:25 2021",
+"vivado_version": "2019.1",
+"part": "xc7a100tcsg324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:09.249
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:09.254
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:09.256
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:09.263
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:38.418
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:41.289
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:41.292
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:42.863
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B356A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:42.882
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:42.889
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B356A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:42.889
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:42.914
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:42.915
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:43.709
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:43.710
+!MESSAGE XSCT Command: [fpga -file E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:45.905
+!MESSAGE XSCT command with result: [fpga -file E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:46.721
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:24:46.723
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:24.371
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:24.374
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.448
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.450
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.451
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.458
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B356A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.458
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.464
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292A8B356A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.464
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.490
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.491
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.512
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:38.512
+!MESSAGE XSCT Command: [fpga -file E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:40.710
+!MESSAGE XSCT command with result: [fpga -file E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:41.516
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-06-30 12:26:41.518
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext

@@ -1,0 +1,164 @@
+//一共需要ping6次
+
+//1.1 配置双层交换机
+switch#configure terminal
+switch(config)#vlan 10
+switch(config-vlan)#exit
+switch(config)#vlan 20
+switch(config-vlan)#exit
+switch(config)#interface fastethernet0/3
+switch(config-if)#switchport access vlan 10
+switch(config-if)#interface fastethernet0/4
+switch(config-if)#switchport access vlan 20
+switch(config-if)#exit
+
+switch(config)#interface aggregateport 1//配置聚合端口
+switch(config-if)#switchport mode trunk
+switch(config-if)#exit
+switch(config)#interface range fastethernet 0/1-2
+switch(config-if-range)#port-group 1
+
+//1.2 测试双层交换机配置
+switch(config-if-range)#end
+switch#show running
+
+
+//2.1 配置三层交换机
+switch#configure terminal
+switch(config)#vlan 10
+switch(config-vlan)#exit
+switch(config)#vlan 20
+switch(config-vlan)#exit
+switch(config)#vlan 50
+switch(config-vlan)#exit
+switch(config)#interface fastethernet0/3
+switch(config-if)#switchport access vlan 50
+switch(config-if)#exit
+
+switch(config)#interface aggregateport 1//配置聚合端口
+switch(config-if)#switchport mode trunk
+switch(config-if)#exit
+switch(config)#interface range fastethernet 0/1-2
+switch(config-if-range)#port-group 1
+switch(config-if-range)#exit
+
+switch(config)#interface vlan10
+switch(config-if)#ip address 192.168.102.2 255.255.255.224
+switch(config-if)#no shutdown
+switch(config-if)#exit
+switch(config)#interface vlan20
+switch(config-if)#ip address 192.168.102.33 255.255.255.248
+switch(config-if)#no shutdown
+switch(config-if)#exit
+switch(config)#interface vlan50//创建VLAN虚接口，并配置IP
+switch(config-if)#ip address 192.168.102.41 255.255.255.252
+switch(config-if)#no shutdown
+switch(config-if)#exit
+
+switch(config)#router ospf//配置ospf
+switch(config-router)#network 192.168.102.0 255.255.255.224 area 0
+switch(config-router)#network 192.168.102.32 255.255.255.248 area 0
+switch(config-router)#network 192.168.102.40 255.255.255.252 area 0
+switch(config-router)#end
+
+switch(config)#service dhcp//配置dhcp
+switch(config)#ip helper-address 192.168.102.42//指定DHCP服务器地址
+
+//配置静态路由
+switch(config)#ip route 0.0.0.0 0.0.0.0 192.168.102.42
+
+//2.2 测试三层交换机配置
+switch(config)#end
+switch#show running
+
+//3.1 配置内网路由器 (ospf、dhcp server、访问控制列表)
+Router1#configure terminal
+Router1(config)#interface fastethernet 1/0
+Router1(config-if)#ip address 192.168.102.42 255.255.255.252
+Router1(config)#no shutdown
+Router1(config)#interface serial 1/2
+Router1(config-if)#ip address 202.120.120.1 255.255.255.248
+Router1(config-if)#clock rate 64000 
+Router1(config)#no shutdown
+
+/* 注意：放在所有最后配置！！！
+Router1(config)#access-list 2 deny 192.168.102.32 0.0.0.7//配置访问控制列表
+Router1(config)#access-list 2 permit any//配置访问控制列表
+Router1(config)#interface fastethernet 1/0
+Router1(config-if)#ip access-group 2 in
+Router1(config-if)#end
+*/
+
+Router1(config)#router ospf//配置ospf
+Router1(config-router)#network 192.168.102.42 0.0.0.0 area 0
+Router1(config-router)#network 202.120.120.0 0.0.0.7 area 0
+Router1(config-router)#end
+
+Router1(config)#service dhcp//配置dhcp vlan10
+Router1(config)#ip dhcp pool vlan10
+Router1(dhcp-config)#network 192.168.102.0 255.255.255.224
+Router1(dhcp-config)#default-router 192.168.102.2
+Router1(dhcp-config)#dns-server 8.8.8.8 8.8.2.2
+Router1(dhcp-config)#lease 0 1
+Router1(dhcp-config)#exit
+
+Router1(config)#service dhcp//配置dhcp vlan 20
+Router1(config)#ip dhcp pool vlan20
+Router1(dhcp-config)#network 192.168.102.32 255.255.255.248
+Router1(dhcp-config)#default-router 192.168.102.33
+Router1(dhcp-config)#dns-server 8.8.8.8 8.8.2.2
+Router1(dhcp-config)#lease 0 1
+Router1(dhcp-config)#exit
+
+Router1(config)#interface serial 1/2//配置NAT
+Router1(config-if)#ip nat outside
+Router1(config)#interface fastethernet 1/0//配置NAT
+Router1(config-if)#ip nat inside
+Router1(config-if)#exit
+
+Router1(config)#ip nat pool onlyone 202.120.120.2 202.120.120.2 netmask 255.255.255.248 //配置NAT
+Router1(config)#access-list 1 permit 192.168.102.0 0.0.0.255
+Router1(config)#ip nat inside source list 1 pool onlyone overload
+
+//配置静态路由
+switch(config)#ip route 0.0.0.0 0.0.0.0 202.120.120.3
+
+//3.2 测试内网路由器 
+Router1(config)#end
+Router1#show running
+
+//4.1 配置外网路由器 (ip和ospf)
+Router2#configure terminal
+Router2(config)#interface serial 1/2
+Router2(config-if)#ip address 202.120.120.3 255.255.255.248
+Router2(config)#no shutdown
+Router2(config)#interface fastethernet 1/0
+Router2(config-if)#ip address 200.20.20.1 255.255.255.0
+Router2(config)#no shutdown
+
+//4.2 测试外网路由器 
+Router2(config)#end
+Router2#show running
+
+
+
+PC1
+192.168.102.1
+255.255.255.224
+192.168.102.2
+
+
+PC2
+192.168.102.34
+255.255.255.248
+192.168.102.33
+
+
+PC3
+200.20.20.20
+255.255.255.0
+200.20.20.1
+
+
+
+

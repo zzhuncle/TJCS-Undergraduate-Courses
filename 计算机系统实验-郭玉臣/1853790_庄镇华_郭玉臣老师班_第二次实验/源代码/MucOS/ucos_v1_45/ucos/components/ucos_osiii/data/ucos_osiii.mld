@@ -1,0 +1,152 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_osiii
+  OPTION drc = ucos_osiii_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/OS-III Real Time Kernel";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_osiii;
+
+
+BEGIN CATEGORY 01. MISCELLANEOUS
+    PARAM name = 01. MISCELLANEOUS;
+    PARAM name = OS_CFG_APP_HOOKS_EN,            desc = "Enable or Disable application specific hooks", type = bool, default = true;
+    PARAM name = OS_CFG_ARG_CHK_EN,              desc = "Enable or Disable argument checking", type = bool, default = true;
+    PARAM name = OS_CFG_CALLED_FROM_ISR_CHK_EN,  desc = "Enable or Disable check for called from ISR", type = bool, default = true;
+    PARAM name = OS_CFG_DBG_EN,                  desc = "Enable debug code/variables", type = bool, default = true;
+    PARAM name = OS_CFG_TICK_EN,                 desc = "Enable or Disable the kernel tick", type = bool, default = true;
+    PARAM name = OS_CFG_DYN_TICK_EN,             desc = "Enable or Disable the dynamic tick feature", type = bool, default = false;
+    PARAM name = OS_CFG_INVALID_OS_CALLS_CHK_EN, desc = "Enable or Disable checks for invalid kernel calls", type = bool, default = false;
+    PARAM name = OS_CFG_OBJ_TYPE_CHK_EN,         desc = "Enable or Disable object type checking", type = bool, default = true;
+    PARAM name = OS_CFG_TS_EN,                   desc = "Enable or Disable time stamping", type = bool, default = false;
+    PARAM name = OS_CFG_PRIO_MAX,                desc = "Defines the maximum number of task priorities", type = int, default = 64;
+    PARAM name = OS_CFG_SCHED_LOCK_TIME_MEAS_EN, desc = "Include code to measure scheduler lock time", type = bool, default = false;
+    PARAM name = OS_CFG_SCHED_ROUND_ROBIN_EN,    desc = "Include code for Round-Robin scheduling", type = bool, default = false;
+    PARAM name = OS_CFG_STK_SIZE_MIN,            desc = "Minimum allowable task stack size", type = int, default = 64;
+END CATEGORY
+
+BEGIN CATEGORY 02. EVENT FLAGS
+    PARAM name = 02. EVENT FLAGS;
+    PARAM name = OS_CFG_FLAG_EN,            desc = "Enable or Disable code generation for EVENT FLAGS", type = bool, default = true;
+    PARAM name = OS_CFG_FLAG_DEL_EN,        desc = "Include code for OSFlagDel()", type = bool, default = true;
+    PARAM name = OS_CFG_FLAG_MODE_CLR_EN,   desc = "Include code for Wait on Clear EVENT FLAGS", default = true;
+    PARAM name = OS_CFG_FLAG_PEND_ABORT_EN, desc = "Include code for OSFlagPendAbort()", default = true;
+END CATEGORY
+
+BEGIN CATEGORY 03. MEMORY PARTITIONS
+    PARAM name = 03. MEMORY PARTITIONS;
+    PARAM name = OS_CFG_MEM_EN, desc = "Enable or Disable code generation for MEMORY MANAGER", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 04. MUTEXES
+    PARAM name = 04. MUTEXES;
+    PARAM name = OS_CFG_MUTEX_EN,            desc = "Enable or Disable code generation for MUTEX", type = bool, default = true;
+    PARAM name = OS_CFG_MUTEX_DEL_EN,        desc = "Include code for OSMutexDel()", type = bool, default = true;
+    PARAM name = OS_CFG_MUTEX_PEND_ABORT_EN, desc = "Include code for OSMutexPendAbort()", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 05. QUEUES
+    PARAM name = 05. QUEUES;
+    PARAM name = OS_CFG_Q_EN,            desc = "Enable or Disable code generation for QUEUES", type = bool, default = true;
+    PARAM name = OS_CFG_Q_DEL_EN,        desc = "Include code for OSQDel()", type = bool, default = true;
+    PARAM name = OS_CFG_Q_FLUSH_EN,      desc = "Include code for OSQFlush()", type = bool, default = true;
+    PARAM name = OS_CFG_Q_PEND_ABORT_EN, desc = "Include code for OSQPendAbort()", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 06. SEMAPHORES
+    PARAM name = 06. SEMAPHORES;
+    PARAM name = OS_CFG_SEM_EN,            desc = "Enable or Disable code generation for SEMAPHORES", type = bool, default = true;
+    PARAM name = OS_CFG_SEM_DEL_EN,        desc = "Include code for OSSemDel()", type = bool, default = true;
+    PARAM name = OS_CFG_SEM_PEND_ABORT_EN, desc = "Include code for OSSemPendAbort()", type = bool, default = true;
+    PARAM name = OS_CFG_SEM_SET_EN,        desc = "Include code for OSSemSet()", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 07. STATISTICS TASK
+    PARAM name = 07. STATISTICS TASK;
+    PARAM name = OS_CFG_STAT_TASK_EN,         desc = "Enable or Disable the statistics task", type = bool, default = false;
+    PARAM name = OS_CFG_STAT_TASK_STK_CHK_EN, desc = "Check task stacks from statistic task", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 08. TASKS
+    PARAM name = 08. TASKS;
+    PARAM name = OS_CFG_TASK_CHANGE_PRIO_EN,    desc = "Include code for OSTaskChangePrio()", type = bool, default = true;
+    PARAM name = OS_CFG_TASK_DEL_EN,            desc = "Include code for OSTaskDel()", type = bool, default = true;
+    PARAM name = OS_CFG_TASK_IDLE_EN,           desc = "Include the idle task", type = bool, default = true;
+    PARAM name = OS_CFG_TASK_Q_EN,              desc = "Include code for OSTaskQXXXX()", type = bool, default = true;
+    PARAM name = OS_CFG_TASK_Q_PEND_ABORT_EN,   desc = "Include code for OSTaskQPendAbort()", type = bool, default = true;
+    PARAM name = OS_CFG_TASK_PROFILE_EN,        desc = "Include variables in OS_TCB for profiling", type = bool, default = false;
+    PARAM name = OS_CFG_TASK_REG_TBL_SIZE,      desc = "Number of task specific registers ", type = int, default = 2;
+    PARAM name = OS_CFG_TASK_STK_REDZONE_EN,    desc = "Enable stack redzone", type = bool, default = false;
+    PARAM name = OS_CFG_TASK_STK_REDZONE_DEPTH, desc = "Depth of the stack redzone", type = int, default = 8;
+    PARAM name = OS_CFG_TASK_SEM_PEND_ABORT_EN, desc = "Include code for OSTaskSemPendAbort()", type = bool, default = true;
+    PARAM name = OS_CFG_TASK_SUSPEND_EN,        desc = "Include code for OSTaskSuspend() and OSTaskResume()", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 09. TIME
+    PARAM name = 09. TIME;
+    PARAM name = OS_CFG_TIME_DLY_HMSM_EN,   desc = "Include code for OSTimeDlyHMSM()", type = bool, default = true;
+    PARAM name = OS_CFG_TIME_DLY_RESUME_EN, desc = "Include code for OSTimeDlyResume()", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 10. TLS
+    PARAM name = 10. TLS;
+    PARAM name = OS_CFG_TLS_TBL_SIZE, desc = "Include code for Task Local Storage (TLS) registers", type = int, default = 0;
+END CATEGORY
+
+BEGIN CATEGORY 11.TIMERS
+    PARAM name = 11. TIMERS;
+    PARAM name = OS_CFG_TMR_EN,     desc = "Enable or Disable code generation for TIMERS", type = bool, default = true;
+    PARAM name = OS_CFG_TMR_DEL_EN, desc = "Enable or Disable code generation for OSTmrDel()", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 12. TRACE
+    PARAM name = 12. TRACE;
+    PARAM name = OS_CFG_TRACE_EN,           desc = "Enable or Disable uC/OS-III Trace instrumentation", type = bool, default = false;
+    PARAM name = OS_CFG_TRACE_API_ENTER_EN, desc = "Enable or Disable uC/OS-III Trace API enter instrumentation", type = bool, default = false;
+    PARAM name = OS_CFG_TRACE_API_EXIT_EN,  desc = "Enable or Disable uC/OS-III Trace API exit  instrumentation", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 13. APPLICATION
+    PARAM name = 13. APPLICATION;
+    PARAM name = OS_CFG_ISR_STK_SIZE,             desc = "Stack size of ISR stack (number of CPU_STK elements)", type = int, default = 512;
+    PARAM name = OS_CFG_MSG_POOL_SIZE,            desc = "Maximum number of messages", type = int, default = 48
+    PARAM name = OS_CFG_TASK_STK_LIMIT_PCT_EMPTY, desc = "Internal Task stack limit in percentage to empty", type = int, default = 10
+
+    PARAM name = OS_CFG_IDLE_TASK_STK_SIZE,  desc = "Stack size of the idle task (number of CPU_STK elements)", type = int, default = 256;
+
+    PARAM name = OS_CFG_STAT_TASK_PRIO,     desc = "Priority of the statistic task", type = int, default = 62;
+    PARAM name = OS_CFG_STAT_TASK_RATE_HZ,  desc = "Rate of execution of the statistic task", type = int, default = 10;
+    PARAM name = OS_CFG_STAT_TASK_STK_SIZE, desc = "Stack size of the statistic task (number of CPU_STK elements)", type = int, default = 256;
+
+    PARAM name = OS_CFG_TICK_RATE_HZ,       desc = "Tick rate in Hz", type = int, default = 1000;
+
+    PARAM name = OS_CFG_TMR_TASK_PRIO,     desc = "Priority of the timer task", type = int, default = 61;
+    PARAM name = OS_CFG_TMR_TASK_STK_SIZE, desc = "Stack size of the timer task (number of CPU_STK elements)", type = int, default = 256;
+    PARAM name = OS_CFG_TMR_TASK_RATE_HZ,  desc = "Rate for timers in OS Ticks per second.", type = int, default = 10;
+
+END CATEGORY
+
+END LIBRARY

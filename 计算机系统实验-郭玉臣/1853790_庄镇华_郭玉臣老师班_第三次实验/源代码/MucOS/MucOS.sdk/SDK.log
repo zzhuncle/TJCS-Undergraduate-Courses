@@ -1,0 +1,126 @@
+22:07:04 INFO  : Registering command handlers for SDK TCF services
+22:07:05 INFO  : Launching XSCT server: xsct.bat -interactive E:\MucOS\MucOS.sdk\temp_xsdb_launch_script.tcl
+22:07:12 INFO  : XSCT server has started successfully.
+22:07:23 INFO  : Successfully done setting XSCT server connection channel  
+22:07:23 INFO  : Successfully done setting SDK workspace  
+22:07:23 INFO  : Processing command line option -hwspec E:/MucOS/MucOS.sdk/design_1_wrapper.hdf.
+22:15:34 INFO  : Saving repository preferences.
+22:15:34 INFO  : Reading in cores from local repositories: 
+		 E:\MucOS\ucos_v1_45\ucos
+22:15:34 INFO  : Cleaning BSP projects in the workspace.
+22:18:57 INFO  : Refreshed build settings on project MucOS
+22:19:53 INFO  : Refreshed build settings on project MucOS
+22:26:14 INFO  : Refreshed build settings on project MucOS
+23:13:59 INFO  : Launching XSCT server: xsct.bat -interactive E:\MucOS\MucOS.sdk\temp_xsdb_launch_script.tcl
+23:14:06 INFO  : XSCT server has started successfully.
+23:14:06 INFO  : Successfully done setting XSCT server connection channel  
+23:14:14 INFO  : Successfully done setting SDK workspace  
+23:14:17 INFO  : Registering command handlers for SDK TCF services
+23:14:20 INFO  : Restoring local repository preferences: 
+		 E:\MucOS\ucos_v1_45\ucos
+23:14:22 INFO  : Processing command line option -hwspec E:/MucOS/MucOS.sdk/design_1_wrapper.hdf.
+23:14:22 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:14:22 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1624720347465,  Project:1624715840173
+23:14:22 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from E:/MucOS/MucOS.sdk/design_1_wrapper.hdf.
+23:14:22 INFO  : Copied contents of E:/MucOS/MucOS.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+23:14:23 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:14:23 INFO  : Clearing existing target manager status.
+23:14:23 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:14:23 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+23:17:37 INFO  : Refreshed build settings on project MucOS
+23:24:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:24:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:24:33 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:33:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:33:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:33:51 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+20:22:17 INFO  : Registering command handlers for SDK TCF services
+20:22:19 INFO  : Launching XSCT server: xsct.bat -interactive E:\MucOS\MucOS.sdk\temp_xsdb_launch_script.tcl
+20:22:26 INFO  : XSCT server has started successfully.
+20:22:31 INFO  : Successfully done setting XSCT server connection channel  
+20:22:31 INFO  : Successfully done setting SDK workspace  
+20:22:31 INFO  : Restoring local repository preferences: 
+		 E:\MucOS\ucos_v1_45\ucos
+20:22:35 INFO  : Processing command line option -hwspec E:/MucOS/MucOS.sdk/design_1_wrapper.hdf.
+20:22:35 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:05:15 INFO  : Registering command handlers for SDK TCF services
+23:05:16 INFO  : Launching XSCT server: xsct.bat -interactive E:\MucOS\MucOS.sdk\temp_xsdb_launch_script.tcl
+23:05:21 INFO  : XSCT server has started successfully.
+23:05:21 INFO  : Successfully done setting XSCT server connection channel  
+23:05:26 INFO  : Successfully done setting SDK workspace  
+23:05:26 INFO  : Restoring local repository preferences: 
+		 E:\MucOS\ucos_v1_45\ucos
+23:05:28 INFO  : Processing command line option -hwspec E:/MucOS/MucOS.sdk/design_1_wrapper.hdf.
+23:05:29 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:06:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:06:12 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:11:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:11:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:11:56 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:26:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:26:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:26:26 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:32:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:32:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:32:09 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:34:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:34:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:34:05 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:41:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:41:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:41:27 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:42:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:42:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:42:52 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:48:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:48:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:48:55 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:50:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:50:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:50:18 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:53:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:53:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+23:53:32 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+19:58:31 INFO  : Registering command handlers for SDK TCF services
+19:58:32 INFO  : Launching XSCT server: xsct.bat -interactive E:\MucOS\MucOS.sdk\temp_xsdb_launch_script.tcl
+19:58:38 INFO  : XSCT server has started successfully.
+19:58:43 INFO  : Successfully done setting XSCT server connection channel  
+19:58:43 INFO  : Successfully done setting SDK workspace  
+19:58:43 INFO  : Restoring local repository preferences: 
+		 E:\MucOS\ucos_v1_45\ucos
+19:58:45 INFO  : Processing command line option -hwspec E:/MucOS/MucOS.sdk/design_1_wrapper.hdf.
+19:58:45 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+20:54:09 INFO  : Registering command handlers for SDK TCF services
+20:54:10 INFO  : Launching XSCT server: xsct.bat -interactive E:\MucOS\MucOS.sdk\temp_xsdb_launch_script.tcl
+20:54:16 INFO  : XSCT server has started successfully.
+20:54:16 INFO  : Successfully done setting XSCT server connection channel  
+20:54:16 INFO  : Successfully done setting SDK workspace  
+20:54:16 INFO  : Restoring local repository preferences: 
+		 E:\MucOS\ucos_v1_45\ucos
+20:54:16 INFO  : Processing command line option -hwspec E:/MucOS/MucOS.sdk/design_1_wrapper.hdf.
+20:54:16 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+20:54:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:54:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+20:54:59 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+22:54:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:54:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+22:54:55 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+22:57:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:57:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+22:57:59 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+12:21:06 INFO  : Registering command handlers for SDK TCF services
+12:21:07 INFO  : Launching XSCT server: xsct.bat -interactive E:\MucOS\MucOS.sdk\temp_xsdb_launch_script.tcl
+12:21:19 INFO  : XSCT server has started successfully.
+12:21:19 INFO  : Successfully done setting XSCT server connection channel  
+12:21:19 INFO  : Restoring local repository preferences: 
+		 E:\MucOS\ucos_v1_45\ucos
+12:21:26 INFO  : Successfully done setting SDK workspace  
+12:21:27 INFO  : Processing command line option -hwspec E:/MucOS/MucOS.sdk/design_1_wrapper.hdf.
+12:21:28 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+12:24:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:24:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+12:24:45 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"
+12:26:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:26:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B356A" && level==0} -index 0' command is executed.
+12:26:40 INFO  : FPGA configured successfully with bitstream "E:/MucOS/MucOS.sdk/design_1_wrapper_hw_platform_0/download.bit"

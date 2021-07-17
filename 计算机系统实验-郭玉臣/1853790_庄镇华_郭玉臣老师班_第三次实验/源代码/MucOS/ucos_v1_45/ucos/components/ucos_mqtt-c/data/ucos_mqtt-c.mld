@@ -1,0 +1,49 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_mqtt-c
+  OPTION drc = ucos_mqtt-c_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/MQTT Client";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_mqtt-c;
+
+BEGIN CATEGORY 01. CLIENT CONFIGURATION
+  PARAM name = 01. CLIENT CONFIGURATION;
+  PARAM name = MQTTc_CFG_ARG_CHK_EXT_EN, desc = "Enable to add extra checks on ext vars", type = bool, default = true;
+  PARAM name = MQTTc_CFG_DBG_GLOBAL_BUF_EN, desc = "Enables dbg buffer where data is copied at checkpoints", type = bool, default = false;
+  PARAM name = MQTTc_CFG_DBG_GLOBAL_BUF_LEN, desc = "Size of dbg buffer", type = int, default = 512;
+END CATEGORY
+
+BEGIN CATEGORY 02. RUNTIME CONFIGURATION
+  PARAM name = 02. RUNTIME CONFIGURATION;
+  PARAM name = MQTTc_OS_CFG_TASK_PRIO, desc = "MQTTc task priority", type = int, default = 20;
+  PARAM name = MQTTc_OS_CFG_TASK_STK_SIZE, desc = "MQTTc task stack size in bytes", type = int, default = 784;
+  PARAM name = MQTTc_CFG_MSG_QTY, desc = "Maximum number of messages being processed", type = int, default = 2;
+  PARAM name = MQTTc_CFG_INACTIVITY_TIMEOUT, desc = "Default MQTT inactivity timeout in seconds", type = int, default = 30;
+  PARAM name = MQTTc_CFG_INTERNAL_TASK_DLY, desc = "MQTT client task internal delay", type = int, default = 0;
+END CATEGORY
+
+END LIBRARY

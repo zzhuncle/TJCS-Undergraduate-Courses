@@ -1,0 +1,58 @@
+20:05:13 **** Incremental Build of configuration Debug for project MucOS ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:06 **** Auto Build of configuration Debug for project MucOS ****
+make all 
+'Building file: ../src/app.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/app.o" -I../../MucOS_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/app.d" -MT"src/app.o" -o "src/app.o" "../src/app.c"
+../src/app.c: In function 'MainTask':
+../src/app.c:120:2: warning: implicit declaration of function 'srand'; did you mean 'scanf'? [-Wimplicit-function-declaration]
+  srand(0);
+  ^~~~~
+  scanf
+../src/app.c:130:8: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+      i=rand()%3+1;
+        ^~~~
+'Finished building: ../src/app.c'
+' '
+'Building target: MucOS.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MucOS_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MucOS.elf"  ./src/app.o   -Wl,--start-group,-lucos,-lgcc,-lc,--end-group -Wl,--start-group,-lucos,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MucOS.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MucOS.elf  |tee "MucOS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46680	   1780	  13220	  61680	   f0f0	MucOS.elf
+'Finished building: MucOS.elf.size'
+' '
+12:26:05 **** Auto Build of configuration Debug for project MucOS ****
+make all 
+'Building file: ../src/app.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/app.o" -I../../MucOS_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/app.d" -MT"src/app.o" -o "src/app.o" "../src/app.c"
+../src/app.c: In function 'MainTask':
+../src/app.c:120:2: warning: implicit declaration of function 'srand'; did you mean 'scanf'? [-Wimplicit-function-declaration]
+  srand(0);
+  ^~~~~
+  scanf
+../src/app.c:119:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/app.c:118:14: warning: unused variable 'input' [-Wunused-variable]
+     CPU_CHAR input[10]="0";
+              ^~~~~
+'Finished building: ../src/app.c'
+' '
+'Building target: MucOS.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MucOS_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MucOS.elf"  ./src/app.o   -Wl,--start-group,-lucos,-lgcc,-lc,--end-group -Wl,--start-group,-lucos,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MucOS.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MucOS.elf  |tee "MucOS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45836	   1780	  13224	  60840	   eda8	MucOS.elf
+'Finished building: MucOS.elf.size'
+' '

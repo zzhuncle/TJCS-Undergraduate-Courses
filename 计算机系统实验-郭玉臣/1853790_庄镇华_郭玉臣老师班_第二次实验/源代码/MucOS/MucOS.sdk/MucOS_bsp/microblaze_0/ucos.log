@@ -1,0 +1,60 @@
+TRACE   - Generating ucos.
+INFO    - ucos_clk automatic selection.
+INFO    - ucos_clk not required.
+INFO    - ucos_shell automatic selection.
+INFO    - ucos_shell not required.
+INFO    - ucos_crc automatic selection.
+INFO    - ucos_crc not required.
+INFO    - ucos_osiii set to enabled.
+INFO    - Setting up build for microblaze.
+TRACE   - Generating Makefile_def.inc.
+INFO    - ucos_get_product_source_base: Source base for cpu found at E:/MucOS/ucos_v1_45/micrium_source/uC-CPU/cpu_core.c.
+INFO    - ucos_get_product_source_base: Source base for lib found at E:/MucOS/ucos_v1_45/micrium_source/uC-LIB/lib_mem.c.
+INFO    - ucos_get_product_source_base: Source base for common found at E:/MucOS/ucos_v1_45/micrium_source/uC-Common/KAL/kal.h.
+INFO    - ucos_get_product_source_base: Source base for clk found at E:/MucOS/ucos_v1_45/micrium_source/uC-Clk/Source/clk.c.
+INFO    - ucos_get_product_source_base: Source base for crc found at E:/MucOS/ucos_v1_45/micrium_source/uC-CRC/Source/crc_util.c.
+INFO    - ucos_get_product_source_base: Source base for shell found at E:/MucOS/ucos_v1_45/micrium_source/uC-Shell/Source/shell.c.
+INFO    - ucos_get_product_source_base: Source base for osii found at E:/MucOS/ucos_v1_45/micrium_source/uCOS-II/Source/os_core.c.
+INFO    - ucos_get_product_source_base: Source base for osiii found at E:/MucOS/ucos_v1_45/micrium_source/uCOS-III/Source/os_core.c.
+INFO    - ucos_get_product_source_base: Source base for tcpip not found.
+INFO    - ucos_get_product_source_base: Source base for tcpip-exp not found.
+INFO    - ucos_get_product_source_base: Source base for fs not found.
+INFO    - ucos_get_product_source_base: Source base for usbd not found.
+INFO    - ucos_get_product_source_base: Source base for usbh not found.
+INFO    - ucos_get_product_source_base: Source base for dhcpc not found.
+INFO    - ucos_get_product_source_base: Source base for dnsc not found.
+INFO    - ucos_get_product_source_base: Source base for ftps not found.
+INFO    - ucos_get_product_source_base: Source base for httpc not found.
+INFO    - ucos_get_product_source_base: Source base for https not found.
+INFO    - ucos_get_product_source_base: Source base for mqttc not found.
+INFO    - ucos_get_product_source_base: Source base for iperf not found.
+INFO    - ucos_get_product_source_base: Source base for telnets not found.
+INFO    - ucos_get_product_source_base: Source base for can not found.
+INFO    - ucos_get_product_source_base: Source base for openamp not found.
+INFO    - handle_mb: Interrupt source peripheral axi_intc.
+INFO    - handle_mb: Interrupt handling source set to UCOS_MB_INTC_TYPE_AXIINTC.
+INFO    - handle_systick: Configuring system tick source as peripheral axi_timer_0.
+INFO    - handle_systick: Found driver tmrctr for peripheral axi_timer_0.
+INFO    - handle_systick: Found instance number 0 for peripheral axi_timer_0.
+INFO    - handle_systick: System tick source set to UCOS_SYSTICK_AXITIMER.
+INFO    - handle_ts: Configuring system timestamp source as peripheral none.
+INFO    - handle_ts: No timestamp source specified.
+INFO    - ucos_handle_stdin: Configuring UCOS STDIN peripheral axi_uartlite_0.
+INFO    - ucos_handle_stdin: Found device id 0 for peripheral axi_uartlite_0.
+INFO    - ucos_handle_stdin: UCOS STDIN source set to UCOS_UART_AXI_UART_LITE.
+INFO    - handle_stdout: Configuring UCOS STDOUT peripheral axi_uartlite_0.
+INFO    - ucos_handle_stdout: Found device id 0 for peripheral axi_uartlite_0.
+INFO    - ucos_handle_stdout: UCOS STDOUT source set to UCOS_UART_AXI_UART_LITE.
+INFO    - ucos_handle_ethernet: No ETHERNET interface specified.
+TRACE   - ucos_handle_ethernet: Ethernet PHY bus mode set to : UCOS_NET_PHY_BUS_MODE_MII.
+TRACE   - ucos_handle_ethernet: Ethernet PHY type set to : UCOS_NET_PHY_TYPE_INT.
+TRACE   - Generating ucos_osiii.
+TRACE   - Generating ucos_common.
+TRACE   - ucos_heap_estimate: Computing heap estimate.
+TRACE   - ucos_heap_estimate: Base heap estimate: 512.
+INFO    - ucos_heap_estimate: Computed heap size 512.
+TRACE   - Generating ucos_axiuartlite.
+TRACE   - ucos_get_intr_src: Finding interrupt source for peripheral axi_uartlite_0.
+TRACE   - ucos_get_intr_src: Found int driver axi_intc_0.
+INFO    - ucos_get_intr_src: Interrupt controller for peripheral axi_uartlite_0 : axi_intc_0.
+INFO    - ucos_get_intr_src: Interrupt source for peripheral axi_uartlite_0 : 2.

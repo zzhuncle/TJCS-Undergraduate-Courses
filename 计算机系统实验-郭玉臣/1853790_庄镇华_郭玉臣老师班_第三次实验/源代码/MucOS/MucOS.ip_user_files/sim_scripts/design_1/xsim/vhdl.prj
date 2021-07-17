@@ -1,0 +1,14 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_microblaze_0_3/sim/design_1_microblaze_0_3.vhd" \
+"../../../bd/design_1/ip/design_1_dlmb_v10_3/sim/design_1_dlmb_v10_3.vhd" \
+"../../../bd/design_1/ip/design_1_ilmb_v10_3/sim/design_1_ilmb_v10_3.vhd" \
+"../../../bd/design_1/ip/design_1_dlmb_bram_if_cntlr_3/sim/design_1_dlmb_bram_if_cntlr_3.vhd" \
+"../../../bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/sim/design_1_ilmb_bram_if_cntlr_3.vhd" \
+"../../../bd/design_1/ip/design_1_mdm_1_3/sim/design_1_mdm_1_3.vhd" \
+"../../../bd/design_1/ip/design_1_rst_clk_wiz_1_100M_3/sim/design_1_rst_clk_wiz_1_100M_3.vhd" \
+"../../../bd/design_1/ip/design_1_axi_uartlite_0_3/sim/design_1_axi_uartlite_0_3.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_0_2/sim/design_1_axi_timer_0_2.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_1_2/sim/design_1_axi_timer_1_2.vhd" \
+"../../../bd/design_1/ip/design_1_axi_intc_0_2/sim/design_1_axi_intc_0_2.vhd" \
+
+nosort

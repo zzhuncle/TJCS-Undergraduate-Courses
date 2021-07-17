@@ -1,0 +1,224 @@
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <meta content = "IE = edge" http-equiv = "X-UA-Compatible">
+    <meta content = "width = device-width, initial-scale = 1" name = "viewport">
+    <meta content = "" name = "description">
+    <meta content = "" name = "author">
+    <link href = "/static/plugins/images/favicon.png" rel = "icon" sizes = "16x16" type = "image/png">
+    <title>TJBikes</title>
+    <!-- Bootstrap Core CSS -->
+    <link href = "/static/bootstrap/dist/css/bootstrap.min.css" rel = "stylesheet">
+    <!-- Menu CSS -->
+    <link href = "/static/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel = "stylesheet">
+    <!-- toast CSS -->
+    <link href = "/static/plugins/bower_components/toast-master/css/jquery.toast.css" rel = "stylesheet">
+    <!-- morris CSS -->
+    <link href = "/static/plugins/bower_components/morrisjs/morris.css" rel = "stylesheet">
+    <!-- animation CSS -->
+    <link href = "/static/css/animate.css" rel = "stylesheet">
+    <!-- Custom CSS -->
+    <link href = "/static/css/style.css" rel = "stylesheet">
+    <!-- color CSS -->
+    <link href = "/static/css/colors/blue-dark.css" id = "theme" rel = "stylesheet">
+    <link href = "/static/css/charts/chartist.min.css" rel = "stylesheet">
+    <link href = "/static/assets/css/style.css" rel = "stylesheet">
+    <link rel = "stylesheet" href = "/static/css/bootstrap-table.min.css">
+</head>
+
+<body class = "content-wrapper">
+    <div class = "preloader" style = "display: none;">
+        <div class = "cssload-speeding-wheel"></div>
+    </div>
+
+    <div id = "wrapper">
+        <!-- 导航栏标签 -->
+        <nav class = "navbar navbar-default navbar-static-top m-b-0">
+            <!-- 导航栏头部 -->
+            <div class = "navbar-header">
+                <a class = "navbar-toggle hidden-sm hidden-md hidden-lg " data-target = ".navbar-collapse" data-toggle = "collapse" href = "javascript:void(0)">
+                    <i class = "fa fa-bars"></i>
+                </a>
+                <div class = "top-left-part">
+                    <a href = "/manager/index"><b><img alt = "home" src = "/static/images/logoko1.png"></b><span class = "hidden-xs" style = "display: none;"></span></a>
+                </div>
+                <ul class = "nav navbar-top-links navbar-right pull-right">
+                    <li>
+                        <a class = "profile-pic" href = "#">
+                            <img alt = "user-img" class = "img-circle" src = "/static/plugins/images/users/IU.jpg" width = "64">
+                            <b class = "hidden-xs"> </b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 左部标签导航 -->
+        <div class = "navbar-default sidebar" role = "navigation" style = "overflow: visible;">
+            <div class = "slimScrollDiv" style = "position: relative; overflow: visible; width: auto; height: 100%;"><div class = "sidebar-nav navbar-collapse slimscrollsidebar" style = "overflow: visible hidden; width: auto; height: 100%;">
+                <ul class = "nav in" id = "side-menu">
+                    <li style = "padding: 10px 0 0;">
+                        <a href = "/user/index" class = "waves-effect active"><i class = "fa fa-home fa-fw" aria-hidden = "true"></i><span class = "hide-menu">主页</span></a>
+                    </li>
+                    <li>
+                        <a href = "/" class = "waves-effect"><i class = "fa fa-key fa-fw" aria-hidden = "true"></i><span class = "hide-menu">登录</span></a>
+                    </li>
+                    <li>
+                        <a href = "/register" class = "waves-effect"><i class = "fa fa-bars fa-fw" aria-hidden = "true"></i><span class = "hide-menu">注册</span></a>
+                    </li>
+                    <li>
+                        <a href = "/logout" class = "waves-effect"><i class = "fa fa-bell fa-fw" aria-hidden = "true"></i><span class = "hide-menu">登出</span></a>
+                    </li>
+                    <li id = "BikeManage">
+                        <a href = "#" class = "waves-effect"><i class = "fa fa-car fa-fw" aria-hidden = "true"></i><span class = "hide-menu">我的单车</span></a>
+                    </li>
+                    <div id = "bike_manage">
+                        <ul>
+                            <li align = "center"><a class = "waves-effect" href = "/user/bike/rent"><span class = "hide-menu">单车使用</span></a></li>
+                            <li align = "center"><a class = "waves-effect" href = "/user/bike/return"><span class = "hide-menu">单车归还</span></a></li>
+                            <li align = "center"><a class = "waves-effect" href = "/user/bike/query"><span class = "hide-menu">单车查询</span></a></li>
+                            <li align = "center"><a class = "waves-effect" href = "/user/bike/info"><span class = "hide-menu">我的记录</span></a></li>
+                        </ul>
+                    </div>
+                    <li>
+                        <a href = "/user/news/main" class = "waves-effect"><i class = "fa fa-file-text-o fa-fw" aria-hidden = "true"></i><span class = "hide-menu">资讯查看</span></a>
+                    </li>
+                    <li>
+                        <a href = "/user/hot/main" class = "waves-effect"><i class = "fa fa-globe fa-fw" aria-hidden = "true"></i><span class = "hide-menu">单车热度</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class = "slimScrollBar" style = "background: rgb(220, 220, 220); width: 0px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 1775px;"></div>
+            <div class = "slimScrollRail" style = "width: 0px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+        </div>
+
+        <!-- 页面内容 -->
+        <div id = "page-wrapper" style = "min-height: 692px;">
+            <div class = "container-fluid">
+                <div class = "row bg-title">
+                    <div class = "col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class = "page-title">单车管理</h4>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-sm-12">
+                        <div class = "white-box">
+                            <div>
+                                <strong>归还单车</strong>
+                                <form class = "form-inline"  action = "/user/bike/return" method = "post">
+                                    <div class = "from-group" style = "padding-left:20px;padding-right:20px;">
+                                        <input class = "form-control" name = "mybike" placeholder = "单车序号" style = "width: 100%;" type = "text">
+                                    </div>
+                                    <div class = "from-group" style = "padding-left:20px;padding-right:20px;">
+                                        <input class = "btn btn-success btn-flat m-b-30 m-t-30" name = "mysubmit" style = "width:15%;" type = "submit" value = "归还单车">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-sm-12">
+                        <div class = "white-box">
+                            <div>
+                                <strong>我的归还记录</strong>
+                                <div>
+                                    <table class = "table table-striped table-bordered" id = "table"></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <footer class = "footer text-center"> 2021 © 庄镇华</footer>
+
+        </div>
+    </div>
+    <!-- Wrapper end-->
+
+    <!-- jQuery -->
+    <script src = "/static/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src = "/static/js/popper.min.js"></script>
+    <script src = "/static/js/main.js"></script>
+    <script src = "/static/js/lib/data-table/buttons.bootstrap.min.js"></script>
+    <script src = "/static/js/lib/data-table/jszip.min.js"></script>
+    <script src = "/static/js/lib/data-table/vfs_fonts.js"></script>
+    <script src = "/static/js/lib/data-table/buttons.html5.min.js"></script>
+    <script src = "/static/js/lib/data-table/buttons.print.min.js"></script>
+    <script src = "/static/js/lib/data-table/buttons.colVis.min.js"></script>
+    <script src = "/static/js/lib/flot-chart/jquery.flot.js"></script>
+    <script src = "/static/js/lib/flot-chart/jquery.flot.pie.js"></script>
+    <script src = "/static/js/lib/flot-chart/jquery.flot.spline.js"></script>
+    <script src = "/static/js/init/datatables-init.js"></script>
+    <script src = "/static/js/lib/moment/moment.js"></script>
+    <script src = "/static/js/lib/chart-js/Chart.bundle.js"></script>
+    <script src = "/static/js/lib/chartist/chartist.min.js"></script>
+    <script src = "/static/js/lib/chartist/chartist-plugin-legend.js"></script>
+    <script src = "/static/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src = "/static/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <!--slimscroll JavaScript -->
+    <script src = "/static/js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src = "/static/js/waves.js"></script>
+    <!--Counter js -->
+    <script src = "/static/plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <script src = "/static/plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+    <!--Morris JavaScript -->
+    <script src = "/static/plugins/bower_components/raphael/raphael-min.js"></script>
+    <script src = "/static/plugins/bower_components/morrisjs/morris.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src = "/static/js/custom.min.js"></script>
+    <script src = "/static/js/dashboard1.js"></script>
+    <script src = "/static/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+    <script src = "/static/js/lib/data-table/datatables.min.js"></script>
+    <script src = "/static/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+    <script src = "/static/js/lib/data-table/dataTables.buttons.min.js"></script>
+    <script src = "/static/js/init/datatables-init.js"></script>
+    <script src = "/static/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $('#BikeManage').on('click',function(){
+                $('#bike_manage').fadeToggle(300);
+            });
+            $('#UserManage').on('click',function(){
+                $('#user_manage').fadeToggle(300);
+            });
+        });
+    </script>
+    <script src = "/static/js/bootstrap-table.min.js"></script>
+    <script src = "/static/js/bootstrap-table-zh-CN.js"></script>
+    <script type = "text/javascript">
+        $(function(){
+            $('#table').bootstrapTable({
+            url: '/user/bike/returndata',
+            dataType: "json",
+            pagination: true,
+            cache: false,
+            pageNumber: 1,
+            pageSize: 6,
+            minimumCountColumns: 2,
+            sidePagination: "server",
+                columns: [{
+                    field: '_id_',
+                    title: '流水号',
+                    align: 'center',
+                },{
+                    field: 'user_id',
+                    title: '用户序号',
+                    align: 'center',
+                }, {
+                    field: 'bike_id',
+                    title: '单车序号',
+                    align: 'center'
+                }, {
+                    field: 'return_time',
+                    title: '使用时间',
+                    align: 'center',
+                }],
+            });
+        });
+    </script>
+</body>
+</html>

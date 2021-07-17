@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/plugins/images/favicon.png">
+    <title>TJBikes</title>
+    <meta name="description" content="TJShareBike - login">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <style type = "text/css">
+        body {
+            display : block;
+            background-image:url("/static/images/bike4.png");
+        }
+    </style>
+</head>
+<body class="bg-secondary text-white">
+    <div class="sufee-login d-flex align-content-center flex-wrap">
+        <div class="container">
+            <div class="login-content">
+                <div class="login-logo">
+                    <img class="align-content" src="/static/images/logoko.png" alt="">
+                </div>
+                <div class="login-form">
+                    <form method = "post">
+                        <div class="form-group">
+                            <label>身份</label>
+                            <select class="form-control selectpicker" data-style="btn-warning" name = "identity">
+                              <option>管理员</option>
+                              <option>用户</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>学号/工号</label>
+                            <input value="{{ user_id }}" type="text" class="form-control" placeholder="id" name = "user_id">
+                        </div>
+                        <div class="form-group">
+                            <label>姓名</label>
+                            <input value="{{ user_name }}" type="text" class="form-control" placeholder="name" name = "user_name">
+                        </div>
+                        <div class="form-group">
+                            <label>密码</label>
+                            <input value="{{ user_pass }}" type="password" class="form-control" placeholder="password" name = "user_pass">
+                        </div>
+                        <input type = "submit" class="btn btn-success btn-flat m-b-30 m-t-30" value = "登录">
+
+                        <div class="register-link m-t-15 text-center">
+                            <p>没有帐户？ <a href="/register"> 在这里注册</a></p>
+                        </div>
+                        <div class="register-link m-t-15 text-center" id="message">
+                            <p style ="color:red">
+                                {% for message in get_flashed_messages(with_categories=True) %}
+                                    {{ message[1] }}
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(function(){
+            setTimeout(function(){
+            $("#message").css('display','none');
+            },1500);
+        })
+    </script>
+</body>
+</html>

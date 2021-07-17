@@ -1,0 +1,17 @@
+INPUT(
+./release\Highlighter.o
+./release\LexAnalyzer.o
+./release\Lex_main.o
+./release\Syn_main.o
+./release\SyntaxAnalyzer.o
+./release\main.o
+./release\mainwindow.o
+./release\sub3.o
+./release\sublex.o
+./release\subsyn.o
+./release\moc_Highlighter.o
+./release\moc_mainwindow.o
+./release\moc_sub3.o
+./release\moc_sublex.o
+./release\moc_subsyn.o
+);

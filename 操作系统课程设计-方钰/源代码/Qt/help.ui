@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QWidget" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>功能帮助</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>751</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::West</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="documentMode">
+    <bool>false</bool>
+   </property>
+   <property name="tabsClosable">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>自动测试</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;自动测试指令，包含需要实现的所有指令&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;test&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ff0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;测试指令序列：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#2aa198;&quot;&gt;&amp;quot;mkdir&lt;/span&gt;&lt;span style=&quot; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#2aa198;&quot;&gt;/bin&amp;quot;&lt;/span&gt;&lt;span style=&quot; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;mkdir&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/etc&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;mkdir&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/home&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;mkdir&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/dev&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;ls&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;mkdir&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/home/texts&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;mkdir&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/home/reports&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;mkdir&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/home/photos&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;ftree&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;cd&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/home/texts&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fcreate&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;Readme.txt&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fopen&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;Readme.txt&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fwrite&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;8&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;Readme.txt&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;2609&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fseek&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;8&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;begin&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fread&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;8&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;ReadmeOut.txt&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;2609&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fclose&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;8&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;cd&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/home/reports&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fcreate&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;Report.pdf&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fopen&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;Report.pdf&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fwrite&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;9&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;Report.pdf&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;1604288&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fseek&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;9&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;begin&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fread&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;9&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;ReportOut.pdf&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;1604288&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fclose&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;9&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;cd&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/home/photos&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fcreate&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;DennisRitchie.jpg&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fopen&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;DennisRitchie.jpg&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fwrite&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;10&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;DennisRitchie.jpg&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;7402&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fseek&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;10&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;begin&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fread&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;10&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;DennisRitchieOut.jpg&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;7402&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fclose&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;10&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;mkdir&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/test&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;cd&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/test&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fcreate&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;Jerry&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fopen&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;Jerry&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fwrite&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;input.txt&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;800&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fseek&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;500&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;begin&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fread&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;std&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;500&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fseek&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;500&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;begin&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fread&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;abc.txt&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;500&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fwrite 13 abc.txt 300&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;fclose&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;13&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;ftree&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;cd&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/test&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;frename&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;Jerry&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;Larry&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;ls&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#839496;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;&amp;quot;ftree&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#268bd2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; color:#2aa198;&quot;&gt;/&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    包含所包含指令序列中所有可能的错误&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>fformat</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;对整个磁盘进行格式化操作&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;fformat&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;2.错误格式：无&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ff0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    由于为单指令，后面无参数，所有没有可能引发的错误&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>exit</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    由于为单指令，后面无参数，所有没有可能引发的错误&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;exit指令执行后系统会进行提示是否退出当前系统，如果确认，系统则退出，当前窗体关闭。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;exit&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>ls</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    由于为单指令，后面无参数，所有没有可能引发的错误&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ls操作为显示当前文件路径下的所有文件及目录。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;ls&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ff0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_7">
+    <attribute name="title">
+     <string>mkdir</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;目录创建操作，创建以第一个参数为名字的目录。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;mkdir directory&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'黑体';&quot;&gt;directory:目录名&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式（当前目录）： &lt;span style=&quot; color:#ff0000;&quot;&gt;mkdir&lt;/span&gt; file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.正确格式（相对路径）：&lt;span style=&quot; color:#ff0000;&quot;&gt; mkdir&lt;/span&gt; ../file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.正确格式（绝对路径）：&lt;span style=&quot; color:#ff0000;&quot;&gt; mkdir&lt;/span&gt; /home/file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;mkdir&lt;/span&gt; ../../../../file 目录超出根目录范围&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;mkdir&lt;/span&gt; abcdefghijklmnopqrstuvwxyzlk 目录名过长&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_9">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.目录名过长&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.目录路径超出根目录&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_8">
+    <attribute name="title">
+     <string>fcreate</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_11">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.文件路径超出根目录范围&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.&lt;span style=&quot; color:#000000;&quot;&gt;文件名过长&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;3.指定参数错误/缺少参数&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;fcreate指令为创建第一个参数路径对应的文件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;fcreate filename&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'黑体';&quot;&gt;filename:文件名（当前目录/相对路径/绝对路径）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式（当前目录）： &lt;span style=&quot; color:#ff0000;&quot;&gt;fcreate&lt;/span&gt; file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.正确格式（相对路径）： &lt;span style=&quot; color:#ff0000;&quot;&gt;fcreate&lt;/span&gt; ../file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.正确格式（绝对路径）： &lt;span style=&quot; color:#ff0000;&quot;&gt;fcreate&lt;/span&gt; /home/file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;fcreate&lt;/span&gt; ../../../../file 目录超出根目录范围&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;fcreate ahjsijsjsjsjsjjsjsjdsadadadasdsa&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;文件名过长&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;7.错误格式: &lt;/span&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;fcreate &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;参数缺失&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_9">
+    <attribute name="title">
+     <string>fopen</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_20">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;fopen打开指定文件路径的文件，并返回打开的文件句柄&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;fopen filename&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'黑体';&quot;&gt;filename:文件名（当前目录/相对路径/绝对路径）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式（当前目录）： &lt;span style=&quot; color:#ff0000;&quot;&gt;fopen&lt;/span&gt; file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.正确格式（相对路径）： &lt;span style=&quot; color:#ff0000;&quot;&gt;fopen&lt;/span&gt; ../file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.正确格式（绝对路径）： &lt;span style=&quot; color:#ff0000;&quot;&gt;fopen&lt;/span&gt; /home/file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;fopen&lt;/span&gt; ../../../../file 目录超出根目录范围&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;fopen&lt;/span&gt; /file/filename 目录创建路径不存在&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;fopen ahjsijsjsjsjsjjsjsjdsadadadasdsa&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;文件名过长&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;7.错误格式: &lt;/span&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;fopen&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; 参数缺失&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_13">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.文件路径超出根目录范围&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.&lt;span style=&quot; color:#000000;&quot;&gt;文件名过长&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;3.指定参数错误/缺少参数&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>fclose</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_22">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;fclose关闭第一个参数文件句柄对应的文件，与fopen指令对应。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;fclose token&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;token：文件句柄&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;fclose 1&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;2.错误格式：fclose 2（文件句柄2不存在时出错）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;3.错误格式：flcose（缺少参数）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_15">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_21">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.文件句柄不存在时出错&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.缺少参数&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>fdelete</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_17">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_23">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.文件路径超出根目录范围&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.&lt;span style=&quot; color:#000000;&quot;&gt;文件名过长&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;3.指定参数错误/缺少参数&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_18">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_24">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;fdelete指令为删除第一个参数路径对应的文件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;fdelete filename&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'黑体';&quot;&gt;filename:文件名（当前目录/相对路径/绝对路径）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式（当前目录）： &lt;span style=&quot; color:#ff0000;&quot;&gt;fdelete&lt;/span&gt; file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.正确格式（相对路径）： &lt;span style=&quot; color:#ff0000;&quot;&gt;fdelete&lt;/span&gt; ../file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.正确格式（绝对路径）： &lt;span style=&quot; color:#ff0000;&quot;&gt;fdelete&lt;/span&gt; /home/file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;fdelete&lt;/span&gt; ../../../../file 目录超出根目录范围&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;fdelete ahjsijsjsjsjsjjsjsjdsadadadasdsa&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;文件名过长&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;7.错误格式: &lt;/span&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;fdelete &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;参数缺失&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_10">
+    <attribute name="title">
+     <string>fread</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_19">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_25">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.文件句柄不存在&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.未指定正确参数&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.缺少对应参数&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_20">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_26">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;根据一个文件操作句柄获取对应的文件信息，并从该文件中读取对应字节数，用户可以将读取的内容输出到文件中，如果文件句柄不存在则会有相应的错误提醒。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;fread token filename size&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;token:文件句柄 filename:文件名 size:读取内容大小&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;1.正确格式（输出到文件）：&lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;fread&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt; 1 test.txt 200&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;(从文件句柄1读取200字节输出到当前目录下test.txt中)&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;2.错误格式：&lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;fread&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt; 2 filename 200&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;(文件句柄2不存在时出错)&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;3.错误格式：&lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;fread&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt; filename 200（缺少参数等）&lt;/span&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_11">
+    <attribute name="title">
+     <string>fseek</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_21">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_27">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.文件句柄不存在&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.未指定正确参数&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.缺少对应参数&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_22">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_28">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;读写指针移动操作，fseek指令为根据begin，cur，end模式移动读写指针到offset对应位置，对应的文件通过文件句柄确定。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;fseek token offset begin&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;fseek token offset cur&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;fseek token offset end&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'黑体';&quot;&gt;token:文件句柄 &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'黑体';&quot;&gt;offset:读写指针所需要的移动量 &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'黑体';&quot;&gt;begin, cur, end:移动方式，分别代表从头移动，从当前位置移动，从尾移动&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;fseek&lt;/span&gt; 1 200 begin&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;（从文件开头移动读写指针到200字节的位置）&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.正确格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;flseek&lt;/span&gt; 1 -20 cur&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;（从当前指针位置移动到前20字节的位置）&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;flseek&lt;/span&gt; 2 200 0(文件句柄2不存在时出错)&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;flseek&lt;/span&gt; 200（缺少参数等）&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;flseek&lt;/span&gt; 2 -200 0（offset指针移动错误）&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_12">
+    <attribute name="title">
+     <string>fwrite</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_23">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_29">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.文件句柄不存在&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.未指定正确参数&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.缺少对应参数&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_24">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_30">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;fwrite指令	为根据一个文件操作句柄获取对应文件信息，并从外部文件中读取指定大小字节的内容到该文件句柄对应的文件中。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;fwrite token filename size&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;token:文件句柄 filename:文件名 size:写入内容大小&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;1.正确格式：&lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;fwrite&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt; 1 test.txt 200&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;2.错误格式：&lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;fwrite&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt; 2 test.txt 200&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;(文件句柄2不存在时出错)&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;3.错误格式：&lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;fwrite&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt; 2 200（参数缺失）&lt;/span&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_13">
+    <attribute name="title">
+     <string>frename</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_26">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_36">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;frename指令可以将文件或文件夹的原名字更改为新名字&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;frename original_name current_name&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;original_name:原文件名 cureent_name:新文件名&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;1.正确格式：&lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;frename&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt; test.txt test.pdf&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;2.错误格式：&lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;frename&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt; Jerry Larry&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;(文件Jerry不存在时出错)&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;3.错误格式：&lt;/span&gt;&lt;span style=&quot; font-family:'宋体'; color:#ff0000;&quot;&gt;frename&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt; Larry（参数缺失）&lt;/span&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_25">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_35">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.要修改名字的文件不存在&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.未指定正确参数&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.缺少对应参数&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_14">
+    <attribute name="title">
+     <string> ftree</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_27">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令说明格式</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_37">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令说明：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ftree指令可以列出指定目录的树结构&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;指令格式：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;ftree&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;ftree directory&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'黑体';&quot;&gt;directory:目录名&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.正确格式（缺省情况）： &lt;span style=&quot; color:#ff0000;&quot;&gt;ftree&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.正确格式（当前目录）： &lt;span style=&quot; color:#ff0000;&quot;&gt;ftree&lt;/span&gt; file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.正确格式（相对路径）：&lt;span style=&quot; color:#ff0000;&quot;&gt; ftree&lt;/span&gt; ../file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.正确格式（绝对路径）：&lt;span style=&quot; color:#ff0000;&quot;&gt; ftree&lt;/span&gt; /home/file&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5.错误格式：ftree ../../../../file 目录超出根目录范围&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6.错误格式：&lt;span style=&quot; color:#ff0000;&quot;&gt;ftree&lt;/span&gt; abcdefghijklmnopqrstuvwxyzlk 目录名过长&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_28">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>301</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> 指令对应错误</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_38">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>281</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.目录名过长&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.目录路径超出根目录&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

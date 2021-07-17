@@ -1,0 +1,172 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_osii
+  OPTION drc = ucos_osii_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/OS-II Real Time Kernel";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_osii;
+
+BEGIN CATEGORY 01. MISCELLANEOUS
+    PARAM name = 01. MISCELLANEOUS;
+    PARAM name = OS_APP_HOOKS_EN,            desc = "Application-defined hooks are called from the uC/OS-II hooks", type = bool, default = false;
+    PARAM name = OS_ARG_CHK_EN,              desc = "Enable or Disable argument checking", type = bool, default = true;
+
+    PARAM name = OS_CPU_HOOKS_EN,            desc = "uC/OS-II hooks are found in the processor port files", type = bool, default = true;
+
+    PARAM name = OS_DEBUG_EN,                desc = "Enable debug variables", type = bool, default = true;
+
+    PARAM name = OS_EVENT_MULTI_EN,          desc = "Include code for OSEventPendMulti(), Not recommended for new applications", default = false;
+    PARAM name = OS_EVENT_NAME_EN,           desc = "Enable names for Sem, Mutex, Mbox and Q", default = true;
+
+    PARAM name = OS_LOWEST_PRIO,             desc = "Defines the lowest priority that can be assigned, must never be higher than 254", type = int, default = 63;
+
+    PARAM name = OS_MAX_EVENTS,              desc = "Max. number of event control blocks in your application", type = int, default = 128;
+    PARAM name = OS_MAX_FLAGS,               desc = "Max. number of Event Flag Groups    in your application", type = int, default = 5;
+    PARAM name = OS_MAX_MEM_PART,            desc = "Max. number of memory partitions", type = int, default = 5;
+    PARAM name = OS_MAX_QS,                  desc = "Max. number of queue control blocks in your application", type = int, default = 5;
+    PARAM name = OS_MAX_TASKS,               desc = "Max. number of tasks in your application, MUST be >= 2", type = int, default = 32;
+
+    PARAM name = OS_SCHED_LOCK_EN,           desc = "Include code for OSSchedLock() and OSSchedUnlock()", type = bool, default = true;
+
+    PARAM name = OS_TICK_STEP_EN,            desc = "Enable tick stepping feature for uC/OS-View", type = bool, default = false;
+
+    PARAM name = OS_TICKS_PER_SEC,           desc = "Set the number of ticks in one second", type = int, default = 1000;
+
+    PARAM name = OS_TLS_TBL_SIZE,            desc = "Size of Thread-Local Storage Table", type = int, default = 0;
+END CATEGORY
+
+
+BEGIN CATEGORY 02. TASK STACKS
+    PARAM name = 02. TASK STACKS;
+    PARAM name = OS_TASK_TMR_STK_SIZE,       desc = "Timer task stack size (# of OS_STK wide entries)", type = int, default = 512;
+    PARAM name = OS_TASK_STAT_STK_SIZE,      desc = "Statistics task stack size (# of OS_STK wide entries)", type = int, default = 512;
+    PARAM name = OS_TASK_IDLE_STK_SIZE,      desc = "Idle task stack size (# of OS_STK wide entries)", type = int, default = 256;
+END CATEGORY
+
+
+BEGIN CATEGORY 03. TASK STACKS
+    PARAM name = 03. TASK MANAGEMENT;
+    PARAM name = OS_TASK_CHANGE_PRIO_EN, desc = "Include code for OSTaskChangePrio()", type = bool, default = true;
+    PARAM name = OS_TASK_CREATE_EN, desc = "Include code for OSTaskCreate()", type = bool, default = true;
+    PARAM name = OS_TASK_CREATE_EXT_EN, desc = "Include code for OSTaskCreateExt()", type = bool, default = true;
+    PARAM name = OS_TASK_DEL_EN, desc = "Include code for OSTaskDel()", type = bool, default = true;
+    PARAM name = OS_TASK_NAME_EN, desc = "Enable task names", type = bool, default = true;
+    PARAM name = OS_TASK_PROFILE_EN, desc = "Include variables in OS_TCB for profiling", type = bool, default = true;
+    PARAM name = OS_TASK_QUERY_EN, desc = "Include code for OSTaskQuery()", type = bool, default = true;
+    PARAM name = OS_TASK_REG_TBL_SIZE, desc = "Size of task variables array (#of INT32U entries)", type = int, default = 2;
+    PARAM name = OS_TASK_STAT_EN, desc = "Enable or Disable the statistics task", type = bool, default = true;
+    PARAM name = OS_TASK_STAT_STK_CHK_EN, desc = "Check task stacks from statistic task", type = bool, default = false;
+    PARAM name = OS_TASK_SUSPEND_EN, desc = "Include code for OSTaskSuspend() and OSTaskResume()", type = bool, default = true;
+    PARAM name = OS_TASK_SW_HOOK_EN, desc = "Include code for OSTaskSwHook()", type = bool, default = true;
+END CATEGORY
+
+
+BEGIN CATEGORY 04. EVENT FLAGS
+    PARAM name = 04. EVENT FLAGS;
+    PARAM name = OS_FLAG_EN, desc = "Enable or Disable code generation for EVENT FLAGS", type = bool, default = true;
+    PARAM name = OS_FLAG_ACCEPT_EN, desc = "Include code for OSFlagAccept()", type = bool, default = true;
+    PARAM name = OS_FLAG_DEL_EN, desc = "Include code for OSFlagDel()", type = bool, default = true;
+    PARAM name = OS_FLAG_NAME_EN, desc = "Enable names for event flag group", type = bool, default = true;
+    PARAM name = OS_FLAG_QUERY_EN, desc = "Include code for OSFlagQuery()", type = bool, default = true;
+    PARAM name = OS_FLAG_WAIT_CLR_EN, desc = "Include code for Wait on Clear EVENT FLAGS", type = bool, default = true;
+    PARAM name = OS_FLAGS_NBITS, desc = "Size in #bits of OS_FLAGS data type (8, 16 or 32)", type = int, default = 16;
+END CATEGORY
+
+
+BEGIN CATEGORY 05. MESSAGE MAILBOXES
+    PARAM name = 05. MESSAGE MAILBOXES;
+    PARAM name = OS_MBOX_EN, desc = "Enable or Disable code generation for MAILBOXES", type = bool, default = true;
+    PARAM name = OS_MBOX_ACCEPT_EN, desc = "Include code for OSMboxAccept()", type = bool, default = true;
+    PARAM name = OS_MBOX_DEL_EN, desc = "Include code for OSMboxDel()", type = bool, default = true;
+    PARAM name = OS_MBOX_PEND_ABORT_EN, desc = "Include code for OSMboxPendAbort()", type = bool, default = true;
+    PARAM name = OS_MBOX_POST_EN, desc = "Include code for OSMboxPost()", type = bool, default = true;
+    PARAM name = OS_MBOX_POST_OPT_EN, desc = "Include code for OSMboxPostOpt()", type = bool, default = true;
+    PARAM name = OS_MBOX_QUERY_EN, desc = "Include code for OSMboxQuery()", type = bool, default = true;
+END CATEGORY
+
+
+BEGIN CATEGORY 06. MEMORY MANAGEMENT
+    PARAM name = 06. MEMORY MANAGEMENT;
+    PARAM name = OS_MEM_EN, desc = "Enable or Disable code generation for MEMORY MANAGER", type = bool, default = true;
+    PARAM name = OS_MEM_NAME_EN, desc = "Enable memory partition names", type = bool, default = true;
+    PARAM name = OS_MEM_QUERY_EN, desc = "Include code for OSMemQuery()", type = bool, default = true;
+END CATEGORY
+
+
+BEGIN CATEGORY 07. MUTUAL EXCLUSION SEMAPHORES
+    PARAM name = 07. MUTUAL EXCLUSION SEMAPHORES;
+    PARAM name = OS_MUTEX_EN, desc = "Enable or Disable code generation for MUTEX", type = bool, default = true;
+    PARAM name = OS_MUTEX_ACCEPT_EN, desc = "Include code for OSMutexAccept()", type = bool, default = true;
+    PARAM name = OS_MUTEX_DEL_EN, desc = "Include code for OSMutexDel()", type = bool, default = true;
+    PARAM name = OS_MUTEX_QUERY_EN, desc = "Include code for OSMutexQuery()", type = bool, default = true;
+END CATEGORY
+
+
+BEGIN CATEGORY 07. MESSAGE QUEUES
+    PARAM name = 07. MESSAGE QUEUES;
+    PARAM name = OS_Q_EN, desc = "Enable or Disable code generation for QUEUES", type = bool, default = true;
+    PARAM name = OS_Q_ACCEPT_EN, desc = "Include code for OSQAccept()", type = bool, default = true;
+    PARAM name = OS_Q_DEL_EN, desc = "Include code for OSQDel()", type = bool, default = true;
+    PARAM name = OS_Q_FLUSH_EN, desc = "Include code for OSQFlush()", type = bool, default = true;
+    PARAM name = OS_Q_PEND_ABORT_EN, desc = "Include code for OSQPendAbort()", type = bool, default = true;
+    PARAM name = OS_Q_POST_EN, desc = "Include code for OSQPost()", type = bool, default = true;
+    PARAM name = OS_Q_POST_FRONT_EN, desc = "Include code for OSQPostFront()", type = bool, default = true;
+    PARAM name = OS_Q_POST_OPT_EN, desc = "Include code for OSQPostOpt()", type = bool, default = true;
+    PARAM name = OS_Q_QUERY_EN, desc = "Include code for OSQQuery()", type = bool, default = true;
+END CATEGORY
+
+
+BEGIN CATEGORY 08. SEMAPHORES
+    PARAM name = 08. SEMAPHORES;
+    PARAM name = OS_SEM_EN, desc = "Enable or Disable code generation for SEMAPHORES", type = bool, default = true;
+    PARAM name = OS_SEM_ACCEPT_EN, desc = "Include code for OSSemAccept()", type = bool, default = true;
+    PARAM name = OS_SEM_DEL_EN, desc = "Include code for OSSemDel()", type = bool, default = true;
+    PARAM name = OS_SEM_PEND_ABORT_EN, desc = "Include code for OSSemPendAbort()", type = bool, default = true;
+    PARAM name = OS_SEM_QUERY_EN, desc = "Include code for OSSemQuery()", type = bool, default = true;
+    PARAM name = OS_SEM_SET_EN, desc = "Include code for OSSemSet()", type = bool, default = true;
+END CATEGORY
+
+
+BEGIN CATEGORY 09. TIME MANAGEMENT
+    PARAM name = 09. TIME MANAGEMENT;
+    PARAM name = OS_TIME_DLY_HMSM_EN, desc = "Include code for OSTimeDlyHMSM()", type = bool, default = true;
+    PARAM name = OS_TIME_DLY_RESUME_EN, desc = "Include code for OSTimeDlyResume()", type = bool, default = true;
+    PARAM name = OS_TIME_GET_SET_EN, desc = "Include code for OSTimeGet() and OSTimeSet()", type = bool, default = true;
+    PARAM name = OS_TIME_TICK_HOOK_EN, desc = "Include code for OSTimeTickHook()", type = bool, default = true;
+END CATEGORY
+
+
+BEGIN CATEGORY 10. TIMER MANAGEMENT
+    PARAM name = 10. TIMER MANAGEMENT;
+    PARAM name = OS_TMR_EN, desc = "Enable or Disable code generation for TIMERS", type = bool, default = true;
+    PARAM name = OS_TMR_CFG_MAX, desc = "Maximum number of timers", type = int, default = 16;
+    PARAM name = OS_TMR_CFG_NAME_EN, desc = "Determine timer names", type = bool, default = true;
+    PARAM name = OS_TMR_CFG_WHEEL_SIZE, desc = "Size of timer wheel (#Spokes)", type = int, default = 2;
+    PARAM name = OS_TMR_CFG_TICKS_PER_SEC, desc = "Rate at which timer management task runs (Hz)", type = int, default = 10;
+END CATEGORY
+
+END LIBRARY

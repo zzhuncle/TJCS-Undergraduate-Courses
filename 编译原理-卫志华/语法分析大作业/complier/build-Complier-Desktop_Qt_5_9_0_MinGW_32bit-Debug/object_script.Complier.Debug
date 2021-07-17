@@ -1,0 +1,17 @@
+INPUT(
+./debug\Highlighter.o
+./debug\LexAnalyzer.o
+./debug\Lex_main.o
+./debug\Syn_main.o
+./debug\SyntaxAnalyzer.o
+./debug\main.o
+./debug\mainwindow.o
+./debug\sub3.o
+./debug\sublex.o
+./debug\subsyn.o
+./debug\moc_Highlighter.o
+./debug\moc_mainwindow.o
+./debug\moc_sub3.o
+./debug\moc_sublex.o
+./debug\moc_subsyn.o
+);

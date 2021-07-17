@@ -1,0 +1,109 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_fs
+  OPTION drc = ucos_fs_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/FS File System";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_fs;
+
+BEGIN CATEGORY 01. FILE SYSTEM CONFIGURATION
+    PARAM name = 01. FILE SYSTEM CONFIGURATION;
+    PARAM name = FS_CFG_SYS_DRV_SEL, desc = "File system Driver configuration", type = enum, values = ("FS_SYS_DRV_SEL_FAT" = FS_SYS_DRV_SEL_FAT), default = FS_SYS_DRV_SEL_FAT;
+    PARAM name = FS_CFG_CACHE_EN, desc = "Enable inclusion of the cache module", type = bool, default = false;
+    PARAM name = FS_CFG_API_EN, desc = "Enable inclusion of the posix-like interface", type = bool, default = true;
+    PARAM name = FS_CFG_DIR_EN, desc = "Enable inclusion of the directory module", type = bool, default = true;
+    PARAM name = FS_CFG_FILE_BUF_EN, desc = "Enable support for file buffers", type = bool, default = true;
+    PARAM name = FS_CFG_FILE_LOCK_EN, desc = "Enable support for file locking", type = bool, default = false;
+    PARAM name = FS_CFG_PARTITION_EN, desc = "Enable support for creating partitions", type = bool, default = false;
+    PARAM name = FS_CFG_WORKING_DIR_EN, desc = "Enable working directory support", type = bool, default = false;
+    PARAM name = FS_CFG_UTF8_EN, desc = "Enable UTF8 support", type = bool, default = false;
+    PARAM name = FS_CFG_RD_ONLY_EN, desc = "Enable read only mode", type = bool, default = false;
+    PARAM name = FS_CFG_CONCURRENT_ENTRIES_ACCESS_EN, desc = "Allow concurrent access to entries", type = bool, default = false;
+    PARAM name = FS_CFG_64_BITS_LBA_EN, desc = "Enable 64-bit LBA support", type = bool, default = false;
+    PARAM name = FS_CFG_BUF_ALIGN_OCTETS, desc = "Minimum alignment of buf's", type = int, default = 32;
+END CATEGORY
+
+BEGIN CATEGORY 02. FILE NAME RESTRICTIONS
+    PARAM name = 02. FILE NAME RESTRICTIONS;
+    PARAM name = FS_CFG_MAX_DEV_NAME_LEN, desc = "Maximum device name length", type = int, default = 15;
+    PARAM name = FS_CFG_MAX_DEV_DRV_NAME_LEN, desc = "Maximum device driver name length", type = int, default = 10;
+    PARAM name = FS_CFG_MAX_FILE_NAME_LEN, desc = "Maximum file name length", type = int, default = 255;
+    PARAM name = FS_CFG_MAX_PATH_NAME_LEN, desc = "Maximum path name length", type = int, default = 260;
+    PARAM name = FS_CFG_MAX_VOL_NAME_LEN, desc = "Maximum volume name length", type = int, default = 10;
+END CATEGORY
+
+BEGIN CATEGORY 03. DEBUG CONFIGURATION
+    PARAM name = 03. DEBUG CONFIGURATION;
+    PARAM name = FS_CFG_DBG_MEM_CLR_EN, desc = "Enable memory clear feature", type = bool, default = true;
+    PARAM name = FS_CFG_DBG_WR_VERIFY_EN, desc = "Enable write verification feature", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 04. ARGUMENT CHECK CONFIGURATION
+    PARAM name = 04. ARGUMENT CHECK CONFIGURATION;
+    PARAM name = FS_CFG_ERR_ARG_CHK_EXT_EN, desc = "Enable external argument checking", type = bool, default = true;
+    PARAM name = FS_CFG_ERR_ARG_CHK_DBG_EN, desc = "Enable internal argument checking", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 05. STATISTICS CONFIGURATION
+    PARAM name = 05. STATISTICS CONFIGURATION;
+    PARAM name = FS_CFG_CTR_STAT_EN, desc = "Enable statistic counter feature", type = bool, default = false;
+    PARAM name = FS_CFG_CTR_ERR_EN, desc = "Enable error counter feature", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 06. FAT FILE SYSTEM CONFIGURATION
+    PARAM name = 05. FAT FILE SYSTEM CONFIGURATION;
+    PARAM name = FS_FAT_CFG_LFN_EN, desc = "Enable long file name support", type = bool, default = true;
+    PARAM name = FS_FAT_CFG_FAT12_EN, desc = "Enable FAT12 support", type = bool, default = true;
+    PARAM name = FS_FAT_CFG_FAT16_EN, desc = "Enable FAT16 support", type = bool, default = true;
+    PARAM name = FS_FAT_CFG_FAT32_EN, desc = "Enable FAT32 support", type = bool, default = true;
+    PARAM name = FS_FAT_CFG_JOURNAL_EN, desc = "Enable the journaling extension", type = bool, default = false;
+    PARAM name = FS_FAT_CFG_VOL_CHK_EN, desc = "Enable the volume check API", type = bool, default = false;
+    PARAM name = FS_FAT_CFG_VOL_CHK_MAX_LEVELS, desc = "Volume checking maximum depth", type = int, default = 20;
+END CATEGORY
+
+BEGIN CATEGORY 07. SD/MMC DEVICE DRIVER CONFIGURATION
+    PARAM name = 07. SD/MMC DEVICE DRIVER CONFIGURATION;
+    PARAM name = FS_DEV_SD_SPI_CFG_CRC_EN, desc = "Enable CRC generation/check", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 08. TRACE CONFIGURATION
+    PARAM name = 09. TRACE CONFIGURATION;
+    PARAM name = FS_TRACE_LEVEL, desc = "Trace output level", type = enum, values = ("TRACE_LEVEL_OFF" = TRACE_LEVEL_OFF, "TRACE_LEVEL_INFO" = TRACE_LEVEL_INFO, "TRACE_LEVEL_DBG" = TRACE_LEVEL_DBG, "TRACE_LEVEL_LOG" = TRACE_LEVEL_LOG), default = TRACE_LEVEL_OFF;
+END CATEGORY
+
+BEGIN CATEGORY 09. RUNTIME CONFIGURATION
+    PARAM name = 09. RUNTIME CONFIGURATION;
+    PARAM name = FS_CFG_MAX_DEV_CNT, desc = "Maximum number of opened devices", type = int, default = 1;
+    PARAM name = FS_CFG_MAX_VOL_CNT, desc = "Maximum number of opened volumes", type = int, default = 1;
+    PARAM name = FS_CFG_MAX_FILE_CNT, desc = "Maximum number of opened files", type = int, default = 2;
+    PARAM name = FS_CFG_MAX_DIR_CNT, desc = "Maximum number of opened directories", type = int, default = 2;
+    PARAM name = FS_CFG_MAX_BUF_CNT, desc = "Number of configured buffers. 0 for auto", type = int, default = 0;
+    PARAM name = FS_CFG_MAX_DEV_DRV_CNT, desc = "Maximum number of device drivers. 0 for auto", type = int, default = 0;
+    PARAM name = FS_CFG_MAX_SEC_SIZE, desc = "Maximum sector size", type = int, default = 512;
+END CATEGORY
+
+END LIBRARY

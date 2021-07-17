@@ -1,0 +1,170 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_usbd
+  OPTION drc = ucos_usbd_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/USB-Device Embedded USB Device stack";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_usbd;
+
+BEGIN CATEGORY 01. GENERIC CONFIGURATION
+    PARAM name = 01. GENERIC CONFIGURATION;
+    PARAM name = USBD_CFG_OPTIMIZE_SPD, desc = "Optimize for speed over memory footprint", type = bool, default = true;
+    PARAM name = USBD_CFG_MAX_NBR_DEV, desc = "Maximum number of USB devices, between 1 and 255", type = int, default = 1;
+    PARAM name = USBD_CFG_BUF_ALIGN_OCTETS, desc = "Global buffer alignment restriction for USB devices", type = int, default = 32;
+    PARAM name = USBD_CFG_ERR_ARG_CHK_EXT_EN, desc = "Enable argument checking", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 02. MICROSOFT OS DESCRIPTOR
+   PARAM name = 02. MICROSOFT OS DESCRIPTOR;
+   PARAM name = USBD_CFG_MS_OS_DESC_EN, desc = "Enable Microsoft string descriptors", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 03. DEVICE CONFIGURATION
+   PARAM name = 03. DEVICE CONFIGURATION;
+   PARAM name = USBD_CFG_MAX_NBR_CFG, desc = "Maximum number of USB configurations", type = int, default = 2;
+   PARAM name = USBD_CFG_EP_ISOC_EN, desc = "Enable isochronous transfer support", type = bool, default = false;
+   PARAM name = USBD_CFG_HS_EN, desc = "Enable high speed device support", type = bool, default = true;
+   PARAM name = USBD_CFG_CTRL_REQ_TIMEOUT_mS, desc = "Timeout for Data/Status Phases of Control Transfer", type = int, default = 5000;
+END CATEGORY
+
+BEGIN CATEGORY 04. INTERFACE CONFIGURATION
+   PARAM name = 04. INTERFACE CONFIGURATION;
+   PARAM name = USBD_CFG_MAX_NBR_IF, desc = "Maximum number of interfaces", type = int, default = 8;
+   PARAM name = USBD_CFG_MAX_NBR_IF_ALT, desc = "Maximum number of alternate interfaces", type = int, default = 8;
+   PARAM name = USBD_CFG_MAX_NBR_IF_GRP, desc = "Maximum number of interface groups", type = int, default = 8;
+   PARAM name = USBD_CFG_MAX_NBR_EP_DESC, desc = "Maximum number of endpoint descriptors", type = int, default = 8;
+   PARAM name = USBD_CFG_MAX_NBR_EP_OPEN, desc = "Maximum number of opened endpoints", type = int, default = 8;
+   PARAM name = USBD_CFG_MAX_NBR_URB_EXTRA, desc = "Maximum number of additional URBs", type = int, default = 8;
+END CATEGORY
+
+BEGIN CATEGORY 05. DEVICE STRING CONFIGURATION
+   PARAM name = 05. DEVICE STRING CONFIGURATION;
+   PARAM name = USBD_CFG_MAX_NBR_STR, desc = "Maximum number of device string descriptors", type = int, default = 10;
+END CATEGORY
+
+BEGIN CATEGORY 06. DEBUG CONFIGURATION
+   PARAM name = 06. DEBUG CONFIGURATION;
+   PARAM name = USBD_CFG_DBG_TRACE_EN, desc = "Enable debug trace output", type = bool, default = false;
+   PARAM name = USBD_CFG_DBG_TRACE_NBR_EVENTS, desc = "Maximum number of oustanding trace events", type = int, default = 10;
+   PARAM name = USBD_CFG_DBG_STATS_EN, desc = "Enable debug module built-in statistics", type = bool, default = false;
+   PARAM name = USBD_CFG_DBG_STATS_CNT_TYPE, desc = "Debug module built-in statistics data type", type = enum,  values = ("CPU_INT08U" = CPU_INT08U, "CPU_INT16U" = CPU_INT16U, "CPU_INT32U" = CPU_INT32U, "CPU_INT64U" = CPU_INT64U), default = CPU_INT08U;
+END CATEGORY
+
+BEGIN CATEGORY 07. AUDIO CLASS CONFIGURATION
+   PARAM name = 07. AUDIO CLASS CONFIGURATION;
+   PARAM name = USBD_AUDIO_CFG_PLAYBACK_EN, desc = "Enable audio playback support", type = bool, default = true;
+   PARAM name = USBD_AUDIO_CFG_RECORD_EN, desc = "Enable audio recording support", type = bool, default = true;
+   PARAM name = USBD_AUDIO_CFG_FU_MAX_CTRL, desc = "Feature Unit with all or Minimum of Controls", type = bool, default = false;
+   PARAM name = USBD_AUDIO_CFG_MAX_NBR_AIC, desc = "Maximum Number of Audio Class Instances", type = int, default = 1;
+   PARAM name = USBD_AUDIO_CFG_MAX_NBR_CFG, desc = "Maximum Number of Configurations per Class Instance", type = int, default = 2;
+   PARAM name = USBD_AUDIO_CFG_MAX_NBR_IT, desc = "Maximum Number of Input Terminals", type = int, default = 2;
+   PARAM name = USBD_AUDIO_CFG_MAX_NBR_OT, desc = "Maximum Number of Output Terminals", type = int, default = 2;
+   PARAM name = USBD_AUDIO_CFG_MAX_NBR_FU, desc = "Maximum Number of Feature Units", type = int, default = 2;
+   PARAM name = USBD_AUDIO_CFG_MAX_NBR_MU, desc = "Maximum Number of Mixer Units", type = int, default = 0;
+   PARAM name = USBD_AUDIO_CFG_MAX_NBR_SU, desc = "Maximum Number of Selector Units", type = int, default = 0;
+   PARAM name = USBD_AUDIO_CFG_MAX_NBR_AS_IF_PLAYBACK, desc = "Maximum Number of Playback AudioStreaming Interfaces", type = int, default = 1;
+   PARAM name = USBD_AUDIO_CFG_MAX_NBR_AS_IF_RECORD, desc = "Maximum Number of Record AudioStreaming Interfaces", type = int, default = 1;
+   PARAM name = USBD_AUDIO_CFG_MAX_NBR_IF_ALT, desc = "Maximum Number of Operational Alternate Interfaces", type = int, default = 2;
+   PARAM name = USBD_AUDIO_CFG_CLASS_REQ_MAX_LEN, desc = "Maximum Class Specific Payload Length", type = int, default = 4;
+   PARAM name = USBD_AUDIO_CFG_BUF_ALIGN_OCTETS, desc = "Audio Buffer Alignment Requirement", type = int, default = 32;
+   PARAM name = USBD_AUDIO_CFG_PLAYBACK_FEEDBACK_EN, desc = "Enable playback feedback support", type = bool, default = false;
+   PARAM name = USBD_AUDIO_CFG_PLAYBACK_CORR_EN, desc = "Enable playback stream correction support", type = bool, default = false;
+   PARAM name = USBD_AUDIO_CFG_RECORD_CORR_EN, desc = "Enable record stream correction support", type = bool, default = false;
+   PARAM name = USBD_AUDIO_CFG_STAT_EN, desc = "Enable audio statistics support", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 08. CDC CLASS CONFIGURATION
+   PARAM name = 08. CDC CLASS CONFIGURATION;
+   PARAM name = USBD_CDC_CFG_MAX_NBR_DEV, desc = "Maximum Number of CDC Class Instances", type = int, default = 1;
+   PARAM name = USBD_CDC_CFG_MAX_NBR_CFG, desc = "Maximum Number of Configurations per Class Instance", type = int, default = 2;
+   PARAM name = USBD_CDC_CFG_MAX_NBR_DATA_IF, desc = "Maximum Number of CDC Data Interfaces", type = int, default = 1;
+END CATEGORY
+
+BEGIN CATEGORY 09. ACM CLASS CONFIGURATION
+   PARAM name = 09. ACM CLASS CONFIGURATION;
+   PARAM name = USBD_ACM_SERIAL_CFG_MAX_NBR_DEV, desc = "Maximum Number of ACM Sub-Class Instances", type = int, default = 1;
+END CATEGORY
+
+BEGIN CATEGORY 10. CDC EEM CLASS CONFIGURATION
+   PARAM name = 10. CDC EEM CLASS CONFIGURATION;
+   PARAM name = USBD_CDC_EEM_CFG_MAX_NBR_DEV, desc = "Maximum Number of CDC EEM Class Instances", type = int, default = 1;
+   PARAM name = USBD_CDC_EEM_CFG_MAX_NBR_CFG, desc = "Maximum Number of Configurations per Class Instance", type = int, default = 2;
+   PARAM name = USBD_CDC_EEM_CFG_RX_BUF_LEN, desc = "Receive buffer length", type = int, default = 1520;
+   PARAM name = USBD_CDC_EEM_CFG_ECHO_BUF_LEN, desc = "Length of buffer used for echo response command", type = int, default = 64;
+END CATEGORY
+
+BEGIN CATEGORY 11. HID CLASS CONFIGURATION
+   PARAM name = 11. HID CLASS CONFIGURATION;
+   PARAM name = USBD_HID_CFG_MAX_NBR_DEV, desc = "Maximum Number of HID Class Instances", type = int, default = 1;
+   PARAM name = USBD_HID_CFG_MAX_NBR_CFG, desc = "Maximum Number of Configurations per Class Instance", type = int, default = 2;
+   PARAM name = USBD_HID_CFG_MAX_NBR_REPORT_ID, desc = "Maximum Number of Report ID", type = int, default = 1;
+   PARAM name = USBD_HID_CFG_MAX_NBR_REPORT_PUSHPOP, desc = "Maximum Number of Push/Pop Items", type = int, default = 0;
+END CATEGORY
+
+BEGIN CATEGORY 12. MASS STORAGE CLASS CONFIGURATION
+   PARAM name = 12. MASS STORAGE CLASS CONFIGURATION;
+   PARAM name = USBD_MSC_CFG_MAX_NBR_DEV, desc = "Maximum Number of MSC Class Instances", type = int, default = 1;
+   PARAM name = USBD_MSC_CFG_MAX_NBR_CFG, desc = "Maximum Number of Configurations per Class Instance", type = int, default = 2;
+   PARAM name = USBD_MSC_CFG_MAX_LUN, desc = "Maximum Number of Logical Units", type = int, default = 1;
+   PARAM name = USBD_MSC_CFG_DATA_LEN, desc = "Data Buffer Length, in octets", type = int, default = 2048;
+# THIS PARAMETER MUST BE HANDLED BY THE TCL TO AVOID BUILD ERRORS
+#   PARAM name = USBD_MSC_CFG_MICRIUM_FS, desc = "Use uC/FS MSC class interface", type = bool, default = false;
+   PARAM name = USBD_MSC_CFG_FS_REFRESH_TASK_EN, desc = "Enable removable device refresh task", type = bool, default = false;
+   PARAM name = USBD_MSC_CFG_DEV_POLL_DLY_mS, desc = "Removable Device Refresh Task Polling Delay", type = int, default = 100;
+END CATEGORY
+
+BEGIN CATEGORY 13. VENDOR CLASS CONFIGURATION
+   PARAM name = 13. VENDOR CLASS CONFIGURATION;
+   PARAM name = USBD_VENDOR_CFG_MAX_NBR_DEV, desc = "Maximum Number of Vendor Class Instances", type = int, default = 1;
+   PARAM name = USBD_VENDOR_CFG_MAX_NBR_CFG, desc = "Maximum Number of Configurations per Class Instance", type = int, default = 2;
+   PARAM name = USBD_VENDOR_CFG_MAX_NBR_MS_EXT_PROPERTY, desc = "Maximum Number of Microsoft Extended Properties", type = int, default = 1;
+END CATEGORY
+
+BEGIN CATEGORY 14. MSC RAMDISK CONFIGURATION
+   PARAM name = 14. MSC RAMDISK CONFIGURATION;
+   PARAM name = USBD_RAMDISK_CFG_BLK_SIZE, desc = "RAMDisk block size", type = int, default = 512;
+   PARAM name = USBD_RAMDISK_CFG_NBR_BLKS, desc = "RAMDisk block count", type = int, default = 44;
+   PARAM name = USBD_RAMDISK_CFG_NBR_UNITS, desc = "RAMDisk number of units", type = int, default = 1;
+   PARAM name = USBD_RAMDISK_CFG_BASE_ADDR, desc = "RAMDisk base address, 0 for auto", type = int, default = 0;
+END CATEGORY
+
+BEGIN CATEGORY 15. RUNTIME CONFIGURATION
+   PARAM name = 15. RUNTIME CONFIGURATION;
+   PARAM name = USBD_OS_CFG_CORE_TASK_PRIO, desc = "USB Device core task prioriry", type = int, default = 5;
+   PARAM name = USBD_OS_CFG_CORE_TASK_STK_SIZE, desc = "USB Device core task stack size", type = int, default = 2048;
+   PARAM name = USBD_OS_CFG_TRACE_TASK_PRIO, desc = "USB Device trace task prioriry", type = int, default = 5;
+   PARAM name = USBD_OS_CFG_TRACE_TASK_STK_SIZE, desc = "USB Device trace task stack size", type = int, default = 2048;
+   PARAM name = USBD_HID_OS_CFG_TMR_TASK_PRIO, desc = "USB Device hid timer task prioriry", type = int, default = 5;
+   PARAM name = USBD_HID_OS_CFG_TMR_TASK_STK_SIZE, desc = "USB Device hid timer task stack size", type = int, default = 2048;
+   PARAM name = USBD_MSC_OS_CFG_TASK_PRIO, desc = "USB Device MSC task prioriry", type = int, default = 5;
+   PARAM name = USBD_MSC_OS_CFG_TASK_STK_SIZE, desc = "USB Device MSC task stack size", type = int, default = 2048;
+   PARAM name = USBD_MSC_OS_CFG_REFRESH_TASK_PRIO, desc = "USB Device MSC refresh task prioriry", type = int, default = 5;
+   PARAM name = USBD_MSC_OS_CFG_REFRESH_TASK_STK_SIZE, desc = "USB Device MSC refresh task stack size", type = int, default = 2048;
+   PARAM name = USBD_MSC_CFG_STORAGE_DRIVER, desc = "Storage driver to use as a back-end.", type = enum, values = ("RAMDisk" = RAMDisk, "uC_FS_V4" = uC_FS_V4, "auto" = auto), default = auto;
+END CATEGORY
+
+END LIBRARY

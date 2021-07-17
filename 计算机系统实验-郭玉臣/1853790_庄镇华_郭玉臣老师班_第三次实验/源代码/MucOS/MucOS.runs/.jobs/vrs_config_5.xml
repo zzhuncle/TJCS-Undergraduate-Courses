@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_dlmb_bram_if_cntlr_3_synth_1" LaunchDir="E:/MucOS/MucOS.runs/design_1_dlmb_bram_if_cntlr_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_lmb_bram_3_synth_1" LaunchDir="E:/MucOS/MucOS.runs/design_1_lmb_bram_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_clk_wiz_1_3_synth_1" LaunchDir="E:/MucOS/MucOS.runs/design_1_clk_wiz_1_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

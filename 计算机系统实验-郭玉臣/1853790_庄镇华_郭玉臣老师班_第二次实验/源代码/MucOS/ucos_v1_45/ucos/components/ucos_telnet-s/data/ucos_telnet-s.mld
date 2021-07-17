@@ -1,0 +1,64 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_telnet-s
+  OPTION drc = ucos_telnet-s_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/TELNETs Telnet Server";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_telnet-s;
+
+BEGIN CATEGORY 01. TASKS CONFIGURATION
+    PARAM name = 01. TASKS CONFIGURATION;
+    PARAM name = TELNETs_OS_CFG_SERVER_TASK_PRIO, desc = "Server task priority", type = int, default = 15;
+    PARAM name = TELNETs_OS_CFG_SESSION_TASK_PRIO, desc = "Session task priority", type = int, default = 16;
+    PARAM name = TELNETs_OS_CFG_SERVER_TASK_STK_SIZE, desc = "Server task stack size in word", type = int, default = 2048;
+    PARAM name = TELNETs_OS_CFG_SESSION_TASK_STK_SIZE, desc = "Session task stack size in word", type = int, default = 2048;
+END CATEGORY
+
+BEGIN CATEGORY 02. TELNET SERVER CONFIGURATION
+    PARAM name = 02. TELNET SERVER CONFIGURATION;
+    PARAM name = TELNETs_CFG_PORT_SERVER, desc = "Server port", type = int, default = 23;
+    PARAM name = TELNETs_CFG_PORT_SERVER_SECURE, desc = "Server port (Secure configuration)", type = int, default = 992;
+
+    PARAM name = TELNETs_CFG_INACTIVITY_TIMEOUT_S, desc = "Inactivity timeout in seconds", type = int, default = 30;
+    PARAM name = TELNETs_CFG_MAX_TX_TRIES, desc = "Maximum number of transmit attempt", type = int, default = 3;
+
+    PARAM name = TELNETs_CFG_RX_BUF_LEN, desc = "Receive buffer length", type = int, default = 100;
+    PARAM name = TELNETs_CFG_NVT_BUF_LEN, desc = "NVT buffer length", type = int, default = 80;
+
+    PARAM name = TELNETs_CFG_MAX_USR_NAME_LEN, desc = "Maximum username length", type = int, default = 32;
+    PARAM name = TELNETs_CFG_MAX_PW_LEN, desc = "Maximum password length", type = int, default = 32;
+
+    PARAM name = TELNETs_CFG_MAX_LOGIN_TRIES, desc = "Maximum login attempts", type = int, default = 3;
+
+    PARAM name = TELNETs_CFG_FS_EN, desc = "Configure FS presence", type = bool, default = false;
+
+    PARAM name = TELNETs_CFG_ECHO_EN, desc = "Configure echo", type = bool, default = false;
+
+    PARAM name = TELNETs_CFG_FS_MAX_PATH_NAME_LEN, desc = "Max path name length", type = int, default = 256;
+END CATEGORY
+
+END LIBRARY

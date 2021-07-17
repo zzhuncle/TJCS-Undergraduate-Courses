@@ -1,0 +1,119 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+OPTION psf_version = 2.1;
+
+BEGIN OS ucos
+    OPTION drc = ucos_drc;
+    OPTION VERSION = 1.45
+    OPTION NAME = ucos
+    OPTION COPYFILES = all;
+    OPTION DESC = "uC/OS is the collection of Micrium RTOS components including the uC/OS-II and uC/OS-III real time kernels.";
+    OPTION app_linker_flags = "-Wl,--start-group,-lucos,-lgcc,-lc,--end-group";
+
+BEGIN CATEGORY 01. GENERAL_OPTIONS
+    PARAM name = 01. GENERAL_OPTIONS;
+    PARAM name = MICRIUM_SOURCE_DIR, desc = "Base directory of Micrium source code. Empty for automatic detection.", type = string, default = "";
+    PARAM name = UCOS_START_TASK_STACK_SIZE, desc = "Stack size of the startup task", type = int, default = 784;
+    PARAM name = UCOS_START_TASK_PRIO, desc = "Priority of the startup task", type = int, default = 5;
+    PARAM name = UCOS_DEBUG_TRACE, desc = "Enable trace output for the uC/OS BSP", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 02. ZYNQ_MPSOC_A53_OPTIONS
+    PARAM name = 02. ZYNQ_MPSOC_A53_OPTIONS;
+    PARAM name = ZYNQ_MPSOC_A53_CONFIG_MMU, desc = "Configure MMU with default page table", type = bool, default = true;
+    PARAM name = ZYNQ_MPSOC_A53_ENABLE_MMU, desc = "Enable MMU after configuration", type = bool, default = true;
+    PARAM name = ZYNQ_MPSOC_A53_CONFIG_CACHES, desc = "Configure caches", type = bool, default = true;
+    PARAM name = ZYNQ_MPSOC_A53_ENABLE_CACHES, desc = "Enable caches", type = bool, default = true;
+    PARAM name = ZYNQ_MPSOC_A53_TICK_SECURE_EL3, desc = "Use EL3 physical timer instead of EL0 physical timer as the kernel tick source", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 03. ZYNQ_A9_OPTIONS
+    PARAM name = 03. ZYNQ_A9_OPTIONS;
+    PARAM name = ZYNQ_CONFIG_MMU, desc = "Configure MMU with default page table", type = bool, default = true;
+    PARAM name = ZYNQ_ENABLE_MMU, desc = "Enable MMU after configuration", type = bool, default = true;
+    PARAM name = ZYNQ_CONFIG_CACHES, desc = "Configure caches", type = bool, default = true;
+    PARAM name = ZYNQ_ENABLE_CACHES, desc = "Enable caches after configuration", type = bool, default = true;
+    PARAM name = ZYNQ_ENABLE_PERF_OPTIMS, desc = "Enable various performance optimizations of the Cortex-A9", type = bool, default = false;
+    PARAM name = ZYNQ_ENABLE_EARLY_L1_I_EN, desc = "Enable the L1 instruction cache and branch prediction as soon as possible", type = bool, default = false;
+    PARAM name = ZYNQ_ENABLE_EARLY_L1_D_EN, desc = "Enable the L1 data cache as soon as possible", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 04. MICROBLAZE_OPTIONS
+    PARAM name = 04. MICROBLAZE_OPTIONS;
+    PARAM name = MB_KERNEL_TICK_SRC, desc = "Source of the kernel timebase", type = peripheral_instance, default=none, range = (axi_timer, axi_intc);
+    PARAM name = MB_KERNEL_TICK_INT_SRC, desc = "Interrupt source of the kernel tick interrupt or -1 for auto", type = int, default = -1;
+    PARAM name = MB_KERNEL_TS_SRC, desc = "Timestamp timer", type = peripheral_instance, default=none, range = (axi_timer);
+END CATEGORY
+
+BEGIN CATEGORY 05. ETHERNET INTERFACE
+    PARAM name = 05. ETHERNET INTERFACE;
+    PARAM name = UCOS_ETHERNET_INTERFACE, desc = "Ethernet peripheral to configure as primary interface", type = peripheral_instance, requires_interface = ethernet, default = none, range = (ps7_ethernet, axi_ethernetlite, psu_ethernet);
+    PARAM name = UCOS_ETHERNET_ADDRESS, desc = "IP address of the interface", type = string, default = "10.10.110.2";
+    PARAM name = UCOS_ETHERNET_GATEWAY, desc = "IP of the default gateway for the interface", type = string, default = "10.10.110.1";
+    PARAM name = UCOS_ETHERNET_SUBMASK, desc = "Subnet mask of the interface", type = string, default = "255.255.255.0";
+    PARAM name = UCOS_ETHERNET_DHCP, desc = "Use DHCP if available", type = bool, default = true;
+    PARAM name = UCOS_PHY_BUS_ADDR, desc = "Bus address of the ethernet PHY, 255 for automatic detection", type = int, default = 255;
+    PARAM name = UCOS_PHY_BUS_MODE, desc = "Bus mode of the ethernet PHY", type = enum, values = ("UCOS_NET_PHY_BUS_MODE_MII" = UCOS_NET_PHY_BUS_MODE_MII, "UCOS_NET_PHY_BUS_MODE_RMII" = UCOS_NET_PHY_BUS_MODE_RMII, "UCOS_NET_PHY_BUS_MODE_SMII" = UCOS_NET_PHY_BUS_MODE_SMII, "UCOS_NET_PHY_BUS_MODE_GMII" = UCOS_NET_PHY_BUS_MODE_GMII, "UCOS_NET_PHY_BUS_MODE_AUTO" = UCOS_NET_PHY_BUS_MODE_AUTO), default = UCOS_NET_PHY_BUS_MODE_AUTO;
+    PARAM name = UCOS_PHY_TYPE, desc = "PHY type.", type = enum, values = ("NET_PHY_TYPE_INT" = NET_PHY_TYPE_INT, "UCOS_NET_PHY_TYPE_EXT" = UCOS_NET_PHY_TYPE_EXT, "UCOS_NET_PHY_TYPE_AUTO" = UCOS_NET_PHY_TYPE_AUTO), default = UCOS_NET_PHY_TYPE_AUTO;
+    PARAM name = UCOS_PHY_SPEED, desc = "Line speed of the ethernet PHY, Auto for auto-negotiation", type = enum, values = ("UCOS_NET_PHY_SPD_10" = UCOS_NET_PHY_SPD_10, "UCOS_NET_PHY_SPD_100" = UCOS_NET_PHY_SPD_100, "UCOS_NET_PHY_SPD_1000" = UCOS_NET_PHY_SPD_1000, "UCOS_NET_PHY_SPD_AUTO" = UCOS_NET_PHY_SPD_AUTO), default = UCOS_NET_PHY_SPD_AUTO;
+    PARAM name = UCOS_PHY_DUPLEX, desc = "Duplex mode of the ethernet PHY, Auto for auto-negotiation", type = enum, values = ("UCOS_NET_PHY_DUPLEX_HALF" = UCOS_NET_PHY_DUPLEX_HALF, "UCOS_NET_PHY_DUPLEX_FULL" = UCOS_NET_PHY_DUPLEX_FULL, "UCOS_NET_PHY_DUPLEX_AUTO" = UCOS_NET_PHY_DUPLEX_AUTO), default = UCOS_NET_PHY_DUPLEX_AUTO;
+    PARAM name = UCOS_IF_RX_BUF_NBR, desc = "Number of receive buffers", type = int, default = 12;
+    PARAM name = UCOS_IF_TX_LARGE_BUF_NBR, desc = "Number of large transmit buffers", type = int, default = 8;
+    PARAM name = UCOS_IF_TX_SMALL_BUF_NBR, desc = "Number of small transmit buffers", type = int, default = 8;
+    PARAM name = UCOS_IF_RX_DESC_NBR, desc = "Number of receive descriptors. 0 for auto", type = int, default = 0
+    PARAM name = UCOS_IF_TX_DESC_NBR, desc = "Number of transmit descriptors. 0 for auto", type = int, default = 0
+    PARAM name = UCOS_IF_DEDIC_MEM_ADDR, desc = "Base address of an un-cached memory region dedicated to hardware descriptors. 0 for auto", type = int, default = 0;
+    PARAM name = UCOS_IF_DEDIC_MEM_SIZE, desc = "Size of the dedicated memory region. 0 for auto", type = int, default = 0;
+    PARAM name = UCOS_IF_HW_ADDR, desc = "Mac address of the interface.", type = string, default = "02:00:00:00:00:00";
+END CATEGORY
+
+BEGIN CATEGORY 06. USB INTERFACE
+    PARAM name = 06. USB INTERFACE;
+    PARAM name = UCOS_USB_INTERFACE, desc = "USB peripheral to configure as primary interface", type = peripheral_instance, requires_interface = ucos_usb, default = none, range = (ps7_usb);
+    PARAM name = UCOS_USB_INTERFACE_TYPE, desc = "Type of usb interface, device or host", type = enum,  values = ("device" = device, "host" = host), default = device;
+END CATEGORY
+
+BEGIN CATEGORY 07. RAMDISK
+    PARAM name = 07. RAMDISK;
+    PARAM name = UCOS_RAMDISK_EN, desc = "Enable creation of a RAMDisk", type = bool, default = false;
+    PARAM name = UCOS_RAMDISK_SIZE, desc = "Size of the RAMDisk in sectors", type = int, default = 128;
+    PARAM name = UCOS_RAMDISK_SECTOR_SIZE, desc = "Sector size of the RAMDisk", type = int, default = 512;
+    PARAM name = UCOS_RAMDISK_BASE_ADDRESS, desc = "Base address of the RAMDisk, 0 for auto", type = int, default = 0;
+END CATEGORY
+
+BEGIN CATEGORY 08. SD CARD
+    PARAM name = 08. SD CARD;
+    PARAM name = UCOS_SDCARD_INTERFACE, desc = "SDIO peripheral to configure as primary interface", type = peripheral_instance, requires_interface = sdio, default = none, range = (ps7_sdio);
+END CATEGORY
+
+BEGIN CATEGORY 09. STARTUP OPTIONS
+    PARAM name = 09. STARTUP OPTIONS;
+    PARAM name = UCOS_CFG_INIT_CAN, desc = "Initialize the CAN module when present", type = bool, default = true;
+    PARAM name = UCOS_CFG_INIT_NET, desc = "Initialize the network modules when present", type = bool, default = true;
+    PARAM name = UCOS_CFG_INIT_FS, desc = "Initialize the file system module when present", type = bool, default = true;
+    PARAM name = UCOS_CFG_INIT_OPENAMP, desc = "Initialize the OpenAMP module when present", type = bool, default = true;
+    PARAM name = UCOS_CFG_INIT_USBD, desc = "Initialize the USB Device module when preset", type = bool, default = true;
+    PARAM name = UCOS_CFG_INIT_USBH, desc = "Initialize the USB Host module when present", type = bool, default = true;
+END CATEGORY
+
+END OS
+

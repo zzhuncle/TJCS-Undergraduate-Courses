@@ -1,0 +1,145 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_tcpip
+  OPTION drc = ucos_tcpip_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/TCP-IP Network Protocol Stack";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_tcpip;
+
+BEGIN CATEGORY 01. TASKS QUEUES
+    PARAM name = 01. TASKS QUEUES;
+    PARAM name = NET_CFG_IF_RX_Q_SIZE, desc = "Configure RX queue size", type = int, default = 100;
+    PARAM name = NET_CFG_IF_TX_DEALLOC_Q_SIZE, desc = "Configure TX queue size", type = int, default = 100;
+END CATEGORY
+
+BEGIN CATEGORY 02. DEBUG
+    PARAM name = 02. DEBUG;
+    PARAM name = NET_DBG_CFG_MEM_CLR_EN, desc = "Configure memory clear feature", type = bool, default = false;
+    PARAM name = NET_ERR_CFG_ARG_CHK_EXT_EN, desc = "Configure external argument check feature", type = bool, default = true;
+    PARAM name = NET_ERR_CFG_ARG_CHK_DBG_EN, desc = "Configure internal argument check feature", type = bool, default = false;
+    PARAM name = NET_CTR_CFG_STAT_EN, desc = "Configure statistics counter feature", type = bool, default = false;
+    PARAM name = NET_CTR_CFG_ERR_EN, desc = "Configure error counter feature", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 03. NETWORK INTERFACE
+    PARAM name = 03. NETWORK INTERFACE;
+    PARAM name = NET_IF_CFG_MAX_NBR_IF, desc = "Configure maximum number of network interfaces", type = int, default = 1;
+    PARAM name = NET_IF_CFG_LOOPBACK_EN, desc = "Enable loop-back interface(s)", type = bool, default = false;
+    PARAM name = NET_IF_CFG_ETHER_EN, desc = "Enable ethernet interface(s)", type = bool, default = true;
+    PARAM name = NET_IF_CFG_WIFI_EN, desc = "Enable ethernet interface(s)", type = bool, default = false;
+    PARAM name = NET_IF_CFG_TX_SUSPEND_TIMEOUT_MS, desc = "Configure interface transmit suspend timeout in ms", type = int, default = 1;
+END CATEGORY
+
+BEGIN CATEGORY 04. ARP CONFIGURATION
+    PARAM name = 04. ARP CONFIGURATION;
+    PARAM name = NET_ARP_CFG_CACHE_NBR, desc = "Configure ARP cache size", type = int, default = 3;
+END CATEGORY
+
+BEGIN CATEGORY 05. NDP CONFIGURATION
+    PARAM name = 05. NDP CONFIGURATION;
+    PARAM name = NET_NDP_CFG_CACHE_NBR, desc = "Configures number of NDP Neighbor cache entries", type = int, default = 5;
+    PARAM name = NET_NDP_CFG_DEST_NBR, desc = "Configures number of NDP Destination cache entries", type = int, default = 5;
+    PARAM name = NET_NDP_CFG_PREFIX_NBR, desc = "Configures number of NDP Prefix entries", type = int, default = 5;
+    PARAM name = NET_NDP_CFG_ROUTER_NBR, desc = "Configures number of NDP Router entries", type = int, default = 1;
+END CATEGORY
+
+BEGIN CATEGORY 06. IPv4 CONFIGURATION
+    PARAM name = 06. IPv4 CONFIGURATION;
+    PARAM name = NET_IPv4_CFG_EN, desc = "Enable IPv4", type = bool, default = true;
+    PARAM name = NET_IPv4_CFG_IF_MAX_NBR_ADDR, desc = "Configure maximum number of addresses per interface", type = int, default = 1;
+END CATEGORY
+
+BEGIN CATEGORY 07. IPv6 CONFIGURATION
+    PARAM name = 07. IPv6 CONFIGURATION;
+    PARAM name = NET_IPv6_CFG_EN, desc = "Enable IPv6", type = bool, default = false;
+    PARAM name = NET_IPv6_CFG_ADDR_AUTO_CFG_EN, desc = "Configure IPv6 Stateless Address Auto-Configuration", type = bool, default = true;
+    PARAM name = NET_IPv6_CFG_DAD_EN, desc = "Configure IPv6 Duplication Address Detection (DAD)", type = bool, default = true;
+    PARAM name = NET_IPv6_CFG_IF_MAX_NBR_ADDR, desc = "Configure maximum number of addresses per interface", type = int, default = 2;
+END CATEGORY
+
+BEGIN CATEGORY 08. IGMP CONFIGURATION
+    PARAM name = 08. IGMP CONFIGURATION;
+    PARAM name = NET_MCAST_CFG_IPv4_RX_EN, desc = "Configure IPv4 multicast rx support", type = bool, default = true;
+    PARAM name = NET_MCAST_CFG_IPv4_TX_EN, desc = "Configure IPv4 multicast tx support", type = bool, default = true;
+    PARAM name = NET_MCAST_CFG_HOST_GRP_NBR_MAX, desc = "Configure maximum number of Multicast groups", type = int, default = 2;
+END CATEGORY
+
+BEGIN CATEGORY 09. SOCKET CONFIGURATION
+    PARAM name = 09. SOCKET CONFIGURATION;
+    PARAM name = NET_SOCK_CFG_SOCK_NBR_TCP, desc = "Configure number of TCP connections", type = int, default = 5;
+    PARAM name = NET_SOCK_CFG_SOCK_NBR_UDP, desc = "Configure number of UDP connections", type = int, default = 2;
+    PARAM name = NET_SOCK_CFG_SEL_EN, desc = "Configure socket select functionality", type = bool, default = true;
+    PARAM name = NET_SOCK_CFG_CONN_ACCEPT_Q_SIZE_MAX, desc = "Configure stream-type sockets' accept queue maximum size", type = int, default = 2;
+    PARAM name = NET_SOCK_CFG_RX_Q_SIZE_OCTET, desc = "Configure socket receive queue buffer size", type = int, default = 4096;
+    PARAM name = NET_SOCK_CFG_TX_Q_SIZE_OCTET, desc = "Configure socket transmit queue buffer size", type = int, default = 4096;
+END CATEGORY
+
+BEGIN CATEGORY 10. TCP CONFIGURATION
+    PARAM name = 10. TCP CONFIGURATION;
+    PARAM name = NET_TCP_CFG_EN, desc = "Enable TCP support", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 11. UDP CONFIGURATION
+    PARAM name = 11. UDP CONFIGURATION;
+    PARAM name = NET_UDP_CFG_RX_CHK_SUM_DISCARD_EN, desc = "Configure UDP Receive Check-Sum Discard feature", type = bool, default = false;
+    PARAM name = NET_UDP_CFG_TX_CHK_SUM_EN, desc = "Configure UDP Transmit Check-Sum feature", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 12. TIMER CONFIGURATION
+    PARAM name = 12. TIMER CONFIGURATION;
+    PARAM name = NET_TMR_CFG_NBR_TMR, desc = "Configure the number of internal timers", type = int, default = 100;
+    PARAM name = NET_TMR_CFG_TASK_FREQ, desc = "Configure the frequency of internal timers", type = int, default = 10;
+END CATEGORY
+
+BEGIN CATEGORY 13. EXTERNAL MODULES
+    PARAM name = 13. EXTERNAL MODULES;
+    PARAM name = NET_EXT_MODULE_CFG_DNS_EN, desc = "Enable DNS Client feature", type = enum, values = ("true" = true, "false" = false, "auto" = auto),  default = auto;
+END CATEGORY
+
+BEGIN CATEGORY 14. CHECKSUM OFFLOAD
+    PARAM name = 14. CHECKSUM OFFLOAD;
+    PARAM name = NET_IPV4_CFG_CHK_SUM_OFFLOAD_RX_EN, desc = "Enable IPV4 RX offload", type = enum, values = ("true" = true, "false" = false, "auto" = auto),  default = auto;
+    PARAM name = NET_IPV4_CFG_CHK_SUM_OFFLOAD_TX_EN, desc = "Enable IPV4 TX offload", type = enum, values = ("true" = true, "false" = false, "auto" = auto),  default = auto;
+    PARAM name = NET_ICMP_CFG_CHK_SUM_OFFLOAD_RX_EN, desc = "Enable ICMP RX offload", type = enum, values = ("true" = true, "false" = false, "auto" = auto),  default = auto;
+    PARAM name = NET_ICMP_CFG_CHK_SUM_OFFLOAD_TX_EN, desc = "Enable ICMP TX offload", type = enum, values = ("true" = true, "false" = false, "auto" = auto),  default = auto;
+    PARAM name = NET_UDP_CFG_CHK_SUM_OFFLOAD_RX_EN, desc = "Enable UDP RX offload", type = enum, values = ("true" = true, "false" = false, "auto" = auto),  default = auto;
+    PARAM name = NET_UDP_CFG_CHK_SUM_OFFLOAD_TX_EN, desc = "Enable UDP TX offload", type = enum, values = ("true" = true, "false" = false, "auto" = auto),  default = auto;
+    PARAM name = NET_TCP_CFG_CHK_SUM_OFFLOAD_RX_EN, desc = "Enable TCP RX offload", type = enum, values = ("true" = true, "false" = false, "auto" = auto),  default = auto;
+    PARAM name = NET_TCP_CFG_CHK_SUM_OFFLOAD_TX_EN, desc = "Enable TCP TX offload", type = enum, values = ("true" = true, "false" = false, "auto" = auto),  default = auto;
+END CATEGORY
+
+BEGIN CATEGORY 15. RUNTIME TASKS
+    PARAM name = 15. RUNTIME TASKS;
+    PARAM name = NET_TASK_CFG_RX_PRIO, desc = "Priority of the receive task", type = int, default = 30;
+    PARAM name = NET_TASK_CFG_RX_STACK_SIZE, desc = "Stack size of the receive task in bytes", type = int, default = 3072;
+    PARAM name = NET_TASK_CFG_TXDEALLOC_PRIO, desc = "Priority of the transmit deallocation task", type = int, default = 6;
+    PARAM name = NET_TASK_CFG_TXDEALLOC_STACK_SIZE, desc = "Stack size of the transmit deallocation task in byte", type = int, default = 2048;
+    PARAM name = NET_TASK_CFG_TMR_PRIO, desc = "Priority of the timer management task", type = int, default = 18;
+    PARAM name = NET_TASK_CFG_TMR_STACK_SIZE, desc = "Stack size of the timer management task in byte", type = int, default = 2048;
+END CATEGORY
+
+END LIBRARY

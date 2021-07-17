@@ -1,0 +1,78 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_common
+  OPTION drc = ucos_common_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/OS Common Components";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_common;
+
+BEGIN CATEGORY 01. CPU
+    PARAM name = 01. CPU;
+    PARAM name = CPU_CFG_NAME_EN, desc = "Enable or Disable CPU host name feature", type = bool, default = false;
+    PARAM name = CPU_CFG_NAME_SIZE, desc = "Hostname string size", type = int, default = 16;
+    PARAM name = CPU_CFG_TS_32_EN, desc = "Enable 32 bit timestamps", type = bool, default = true;
+    PARAM name = CPU_CFG_TS_64_EN, desc = "Enable 64 bit timestamps", type = bool, default = true;
+    PARAM name = CPU_CFG_TS_TMR_SIZE, desc = "CPU Timestamps word size", type = enum, values = ("32 bit" = CPU_WORD_SIZE_32, "64 bit" = CPU_WORD_SIZE_64), default = CPU_WORD_SIZE_32;
+    PARAM name = CPU_CFG_CACHE_MGMT_EN, desc = "Enable or disable CPU cache management", type = enum, values = ("enabled" = true, "disabled" = false, "auto" = auto),  default = auto;
+    PARAM name = CPU_CFG_INT_DIS_MEAS_EN, desc = "Enable maximum interrupt disable time measurement", type = bool, default = false;
+END CATEGORY
+
+BEGIN CATEGORY 02. LIB
+    PARAM name = 02. LIB;
+    PARAM name = LIB_MEM_CFG_ARG_CHK_EXT_EN, desc = "Enable argument checking", type = bool, default = false;
+    PARAM name = LIB_MEM_CFG_DBG_INFO_EN, desc = "Enable allocation of memory allocation debug information", type = bool, default = false;
+    PARAM name = LIB_MEM_CFG_HEAP_AUTO, desc = "Heap size determined automatically", type = bool, default = true;
+    PARAM name = LIB_MEM_CFG_HEAP_SIZE, desc = "UCOS Internal heap size. 0 - disables the heap", type = int, default = 0;
+    PARAM name = LIB_MEM_CFG_HEAP_BASE_ADDR, desc = "UCOS Optional heap location. 0 for auto", type = int, default = 0x00000000;
+END CATEGORY
+
+BEGIN CATEGORY 03. CLK
+    PARAM name = 03. CLK;
+    PARAM name = CLK_ENABLED, desc = "Include the uC/Clk module", type = enum, values = ("true" = true, "false" = false, "auto" = auto) default = auto;
+    PARAM name = CLK_CFG_ARG_CHK_EN, desc = "Enable argument checking", type = bool, default = false;
+    PARAM name = CLK_CFG_STR_CONV_EN, desc = "Enable clock string conversion", type = bool, default = true;
+    PARAM name = CLK_CFG_NTP_EN, desc = "Enable NTP conversion", type = bool, default = true;
+    PARAM name = CLK_CFG_UNIX_EN, desc = "Enable UNIX time conversion", type = bool, default = true;
+    PARAM name = CLK_CFG_EXT_EN, desc = "Enable external RTC source", type = bool, default = false;
+    PARAM name = CLK_CFG_SIGNAL_EN, desc = "Enable clock signal", type = bool, default = false;
+    PARAM name = CLK_CFG_SIGNAL_FREQ_HZ, desc = "Clock signal frequency", type = int, default = 1000;
+    PARAM name = CLK_CFG_TZ_DFLT_SEC, desc = "Default time zone", type = int, default = 0;
+END CATEGORY
+
+BEGIN CATEGORY 04. SHELL
+    PARAM name = 04. SHELL;
+    PARAM name = SHELL_ENABLED, desc = "Include the uC/Shell module", type = enum, values = ("true" = true, "false" = false, "auto" = auto) default = auto;
+    PARAM name = SHELL_CFG_CMD_TBL_SIZE, desc = "Command table size", type = int, default = 20;
+    PARAM name = SHELL_CFG_CMD_ARG_NBR_MAX, desc = "Maximum number of command argument", type = int, default = 20;
+    PARAM name = SHELL_CFG_MODULE_CMD_NAME_LEN_MAX, desc = "Maximum command length", type = int, default = 100;
+END CATEGORY
+
+BEGIN CATEGORY 05. CRC
+    PARAM name = 05. CRC;
+    PARAM name = CRC_ENABLED, desc = "Include the uC/CRC module", type = enum, values = ("true" = true, "false" = false, "auto" = auto) default = auto;
+END CATEGORY
+
+END LIBRARY

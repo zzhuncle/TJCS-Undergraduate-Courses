@@ -1,0 +1,10 @@
+set_property IOSTANDARD LVCMOS33 [get_ports reset]
+set_property IOSTANDARD LVCMOS33 [get_ports usb_uart_rxd]
+set_property IOSTANDARD LVCMOS33 [get_ports usb_uart_txd]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_block]
+set_property IOSTANDARD LVCMOS33 [get_ports reset]
+
+set_property PACKAGE_PIN E3 [get_ports sys_block]
+set_property PACKAGE_PIN J15 [get_ports reset]
+set_property PACKAGE_PIN C4 [get_ports usb_uart_rxd]
+set_property PACKAGE_PIN D4 [get_ports usb_uart_txd]

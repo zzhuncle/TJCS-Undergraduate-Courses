@@ -1,0 +1,156 @@
+22:29:24 **** Build of project myos_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_9/src"
+make -C microblaze_0/libsrc/intc_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src"
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/ucos_axiuartlite_v1_45/src"
+make -C microblaze_0/libsrc/ucos_axiuartlite_v1_45/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/ucos_common_v1_45/src"
+make -C microblaze_0/libsrc/ucos_common_v1_45/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/ucos_osii_v1_45/src"
+make -C microblaze_0/libsrc/ucos_osii_v1_45/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/ucos_standalone_v1_45/src"
+make -C microblaze_0/libsrc/ucos_standalone_v1_45/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/ucos_v1_45/src"
+make -C microblaze_0/libsrc/ucos_v1_45/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_9/src"
+make -C microblaze_0/libsrc/intc_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src"
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/ucos_axiuartlite_v1_45/src"
+make -C microblaze_0/libsrc/ucos_axiuartlite_v1_45/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling ucos_axiuartlite"
+mb-ar: creating ../../../lib/libucos.a
+"Running Make libs in microblaze_0/libsrc/ucos_common_v1_45/src"
+make -C microblaze_0/libsrc/ucos_common_v1_45/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uC/OS Common Components"
+In file included from ../../../include/Source/ucos_ii.h:55,
+                 from uC-Common/KAL/uCOS-II/kal.c:56:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+mb/cpu_bsp.c: In function 'CPU_TS32_to_uSec':
+mb/cpu_bsp.c:330:41: warning: unused parameter 'ts_cnts' [-Wunused-parameter]
+ CPU_INT64U  CPU_TS32_to_uSec (CPU_TS32  ts_cnts)
+                               ~~~~~~~~~~^~~~~~~
+mb/cpu_bsp.c: In function 'CPU_TS64_to_uSec':
+mb/cpu_bsp.c:346:41: warning: unused parameter 'ts_cnts' [-Wunused-parameter]
+ CPU_INT64U  CPU_TS64_to_uSec (CPU_TS64  ts_cnts)
+                               ~~~~~~~~~~^~~~~~~
+"Running Make libs in microblaze_0/libsrc/ucos_osii_v1_45/src"
+make -C microblaze_0/libsrc/ucos_osii_v1_45/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uC/OS-II"
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_core.c:42:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_dbg_r.c:37:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_flag.c:41:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_mbox.c:41:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_mem.c:41:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_mutex.c:41:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_q.c:41:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_sem.c:41:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_task.c:41:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_time.c:41:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Source/os_tmr.c:41:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from uCOS-II/Ports/MicroBlaze/GNU/os_cpu_c.c:37:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+uCOS-II/Ports/MicroBlaze/GNU/os_cpu_c.c: In function 'OSTaskCreateHook':
+uCOS-II/Ports/MicroBlaze/GNU/os_cpu_c.c:93:33: warning: unused parameter 'ptcb' [-Wunused-parameter]
+ void  OSTaskCreateHook (OS_TCB *ptcb)
+                         ~~~~~~~~^~~~
+In file included from .//uCOS-II/Source/ucos_ii.h:55,
+                 from .//uCOS-II/Source/os.h:38,
+                 from bsp/mb/ucos_osii_bsp.c:50:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+"Running Make libs in microblaze_0/libsrc/ucos_standalone_v1_45/src"
+make -C microblaze_0/libsrc/ucos_standalone_v1_45/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+inbyte.c: In function 'inbyte':
+inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+outbyte.c: In function 'outbyte':
+outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
+ void outbyte(char c) {
+              ~~~~~^
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/ucos_v1_45/src"
+make -C microblaze_0/libsrc/ucos_v1_45/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uC/OS"
+In file included from ../../../include/Source/ucos_ii.h:55,
+                 from ucos_startup.c:49:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+In file included from mb/ucos_int_impl.c:45:
+../../../include/os_cpu.h:110:1: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+ OS_CPU_SR   OS_CPU_SR_Save   (void);
+ ^~~~~~~~~
+'Finished building libraries'
+
+22:29:48 Build Finished (took 24s.152ms)
+

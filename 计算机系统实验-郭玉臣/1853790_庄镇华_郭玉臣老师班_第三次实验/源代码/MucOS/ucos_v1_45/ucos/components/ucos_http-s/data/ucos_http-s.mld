@@ -1,0 +1,83 @@
+#############################################################################
+#                               uCOS XSDK BSP                               #
+#                                                                           #
+#        (c) Copyright 2014-2020; Silicon Laboratories Inc.,                #
+#               400 W. Cesar Chavez, Austin, TX 78701                       #
+#                                                                           #
+#  All rights reserved. Protected by international copyright laws.          #
+#                                                                           #
+# Your use of this software is subject to your acceptance of the terms      #
+# of a Silicon Labs Micrium software license, which can be obtained by      #
+# contacting info@micrium.com. If you do not agree to the terms of this     #
+# license, you may not use this software.                                   #
+#                                                                           #
+# Please help us continue to provide the Embedded community with the finest #
+# software available. Your honesty is greatly appreciated.                  #
+#                                                                           #
+#   You can find our product's documentation at: doc.micrium.com            #
+#                                                                           #
+#         For more information visit us at: www.micrium.com                 #
+#############################################################################
+
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_http-s
+  OPTION drc = ucos_http-s_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "uC/HTTPs HTTP Server";
+  OPTION VERSION = 1.45;
+  OPTION NAME = ucos_http-s;
+
+BEGIN CATEGORY 01. ARGUMENT CHECKING
+  PARAM name = 01. ARGUMENT CHECKING;
+  PARAM name = HTTPs_CFG_ARG_CHK_EXT_EN, desc = "Enable external argument checking", type = bool, default = true;
+  PARAM name = HTTPs_CFG_DBG_INFO_EN, desc = "Enable debug information", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 02. STATISTIC COUNTERS
+  PARAM name = 02. STATISTIC COUNTERS;
+  PARAM name = HTTPs_CFG_CTR_STAT_EN, desc = "Enable stat counters", type = bool, default = true;
+  PARAM name = HTTPs_CFG_CTR_ERR_EN, desc = "Enable error counters", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 03. FILE SYSTEM
+  PARAM name = 03. FILE SYSTEM;
+  PARAM name = HTTPs_CFG_FS_PRESENT_EN, desc = "Enable file system support", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 04. PERSISTENT CONNECTIONS
+  PARAM name = 04. PERSISTENT CONNECTIONS;
+  PARAM name = HTTPs_CFG_PERSISTENT_CONN_EN, desc = "Enable persistent connection support", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 05. HEADER FIELDS
+  PARAM name = 05. HEADER FIELDS;
+  PARAM name = HTTPs_CFG_HDR_RX_EN, desc = "Enable header fields in RX", type = bool, default = true;
+  PARAM name = HTTPs_CFG_HDR_TX_EN, desc = "Enable header fields in TX", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 06. QUERY STRING
+  PARAM name = 06. QUERY STRING;
+  PARAM name = HTTPs_CFG_QUERY_STR_EN, desc = "Enable query string feature", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 07. SERVER FORM
+  PARAM name = 07. SERVER FORM;
+  PARAM name = HTTPs_CFG_FORM_EN, desc = "Enable form processing feature", type = bool, default = true;
+  PARAM name = HTTPs_CFG_FORM_MULTIPART_EN, desc = "Enable multi-part form processing", type = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 08. TOKEN PARSING
+  PARAM name = 08. TOKEN PARSING;
+  PARAM name = HTTPs_CFG_TOKEN_PARSE_EN, desc = "Enable dynamic token replacement processing", desc = bool, default = true;
+END CATEGORY
+
+BEGIN CATEGORY 09. ABSOLUTE URI
+  PARAM name = 09. ABSOLUTE URI;
+  PARAM name = HTTPs_CFG_ABSOLUTE_URI_EN, desc = "Enable support for absolute URI", desc = bool, default = true;
+END CATEGORY
+
+END LIBRARY
+
