@@ -1,5 +1,8 @@
-<img src="https://img.shields.io/badge//-brightgreen" />
-https://github.com/zzhuncle/TJCS-Courses
+![zzhuncle.github.io](https://badgen.net/github/issues/zzhuncle/zzhuncle.github.io)
+![zzhuncle.github.io](https://badgen.net/github/forks/zzhuncle/zzhuncle.github.io)
+![zzhuncle.github.io](https://badgen.net/github/stars/zzhuncle/zzhuncle.github.io)
+
+
 
 # TJCS-Courses
 
