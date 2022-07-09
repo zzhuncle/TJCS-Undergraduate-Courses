@@ -1,6 +1,10 @@
 
 # TJCS-Courses
 
+<div align="center">  
+  <img  src="https://github-readme-streak-stats.herokuapp.com?user=zzhuncle&theme=onedark&date_format=M%20j%5B%2C%20Y%5D" />
+</div>
+
 ## 前言
 
 &emsp;&emsp;本仓库意在分享同济大学CS专业的一些课程作业，以供学弟学妹参考。有时候不太喜欢某些课程，但为了绩点又不得不硬着头皮做大作业，如果你也有这样的体验的话，那么不妨参考一下本仓库，可以帮助你更快地完成大作业。当然，直接抄袭是不提倡的。最后，笔者是18级的学生，课程作业肯定会随着时间不断改变、完善的，因此仅供参考。
