@@ -1,10 +1,17 @@
-<img src="https://img.shields.io/badge/https://github.com/zzhuncle/TJCS-Courses/-brightgreen" />
+<img src="https://img.shields.io/badge//-brightgreen" />
+https://github.com/zzhuncle/TJCS-Courses
 
 # TJCS-Courses
 
-![zzhuncle's GitHub stats](https://github-readme-stats.vercel.app/api?username=zzhuncle&show_icons=true)
+![zzhuncle's GitHub Stats](https://github-readme-stats.vercel.app/api?username=zzhuncle&show_icons=true)
 
 <img  src="https://github-readme-streak-stats.herokuapp.com?user=zzhuncle&date_format=M%20j%5B%2C%20Y%5D" />
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=zzhuncle)
+
+![zzhuncle's github activity graph](https://activity-graph.herokuapp.com/graph?username=zzhuncle)
+
+  <img  src="https://activity-graph.herokuapp.com/graph?username=zzhuncle&theme=minimal" />
 
 ## 前言
 
