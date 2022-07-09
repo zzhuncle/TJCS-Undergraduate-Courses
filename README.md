@@ -1,8 +1,12 @@
+<img src="https://img.shields.io/badge/gitHub-%E8%AE%A9%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D%E5%8F%98%E5%BE%97%E6%9B%B4%E5%A5%BD-brightgreen" />
+
+# TJCS-Courses
+
+![zzhuncle's GitHub stats](https://github-readme-stats.vercel.app/api?username=zzhuncle&show_icons=true)
+
 <div align="center">  
   <img  src="https://github-readme-streak-stats.herokuapp.com?user=zzhuncle&date_format=M%20j%5B%2C%20Y%5D" />
 </div>
-
-# TJCS-Courses
 
 ## 前言
 
